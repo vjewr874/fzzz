@@ -1,0 +1,88 @@
+.withdraw {
+  .ic-wallet {
+    width: 16.67px;
+    margin-right: 8px;
+  }
+  .balance {
+    margin-top: 18px;
+    padding: 0 20px 0 20px;
+  }
+  .ic-title {
+    display: flex;
+  }
+  .total {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .money {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  .payment-method {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .radio {
+    background-color: #c72114;
+    color: #c72114;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+  .row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 12px;
+  }
+  .method {
+    font-weight: 400;
+  }
+  .input {
+    border: 1px solid #c72114;
+    border-radius: 8px;
+    margin-top: 12px;
+  }
+  .note {
+    color: #c72114;
+    font-weight: 400;
+    margin-top: 28px;
+  }
+  .recharge-button {
+    background-color: #f4b34e;
+    padding: 8px 0 8px 0;
+    margin: 0 20px 0 20px;
+    width: 90%;
+    align-self: center;
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    border-width: 0;
+    margin-top: 36px;
+  }
+  .info {
+    border: 1px solid #c72114;
+    border-radius: 8px;
+    margin-top: 28px;
+    padding: 17px 12px 17px 12px;
+  }
+  .row-between {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .info-title {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .info-value {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,27 @@
+#details {
+  padding: 20px;
+  p,
+  span,
+  h2 {
+    background-color: transparent !important;
+    color: white !important;
+  }
+  .details-img {
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 24px;
+  }
+  .details-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: #1d1d42;
+    margin-bottom: 12px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 0.938rem;
+    line-height: 1.375rem;
+    color: #1d1d42;
+  }
+}

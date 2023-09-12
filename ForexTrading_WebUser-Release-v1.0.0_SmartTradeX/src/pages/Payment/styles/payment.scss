@@ -1,0 +1,72 @@
+@import '../../../assets/styles/helpers/variables';
+
+#payment {
+  .container {
+    &-payment {
+      padding: 20px 0;
+    }
+    &-wallet {
+      padding: 0 8px 20px;
+    }
+    &-info-payment {
+      background-color: #ffffff;
+      padding: 12px 8px;
+      margin-bottom: 16px;
+    }
+    &-amount {
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      &--total {
+        padding-top: 12px;
+      }
+    }
+    &-action {
+      padding: 28px 8px;
+      text-align: center;
+      .note {
+        font-size: 0.875rem;
+        color: #c82215;
+        margin-bottom: 12px;
+      }
+      .btn-main {
+        margin-left: 0 !important;
+        box-shadow: none !important;
+      }
+    }
+  }
+  .title {
+    font-size: 0.875rem;
+    padding-bottom: 8px;
+    font-weight: 700;
+    color: #092249;
+  }
+  .name {
+    font-size: 0.875rem;
+    color: #092249;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  .amount {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #c82215;
+  }
+  .content {
+    color: #092249;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  .info {
+    &-detail {
+      @include display-flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .border-none {
+    border: none;
+  }
+}

@@ -1,0 +1,180 @@
+@import '../../../assets/styles/helpers/variables';
+
+.profileUser {
+  padding: 20px;
+
+  &-avatar {
+    @include display-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+    &-title {
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 1.25rem;
+      margin-top: 8px;
+    }
+
+    &-content {
+      .my-profile__avatar {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        border-radius: 50%;
+      }
+
+      .my-profile__icon {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+
+  &-header {
+    @include display-flex;
+    margin-top: 32px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    span {
+      margin-left: 8px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+    }
+  }
+
+  &-info {
+    margin-top: 24px;
+    background-color: $main-background-light;
+    padding: 4px 12px;
+    border-radius: 14px;
+
+    &-item {
+      padding: 16px 0;
+      @include display-flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .content {
+        text-align: right;
+        background-color: $main-background-light;
+        border: none;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        word-break: break-all;
+
+        // border: 1px solid rgba(255, 255, 255, 0.2);
+        &:focus-visible {
+          outline: none;
+        }
+      }
+
+      .title,
+      .setting {
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 0.938rem;
+        line-height: 1.25rem;
+        color: rgba(255, 255, 255, 0.75);
+        max-width: 37%;
+
+        img {
+          height: 20px;
+          width: 20px;
+          margin-top: -4px;
+        }
+      }
+    }
+  }
+
+  &-BankWallet {
+    &-title {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+      color: $color-text-primary-light;
+      margin: 24px 0 12px;
+    }
+
+    &-input {
+      background-color: $main-background-light;
+      border: none;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.25rem;
+      word-break: break-all;
+      color: $color-text-primary;
+      padding: 12px 8px;
+
+      &::placeholder {
+        color: $color-text-primary-very-light;
+      }
+
+      &:disabled {
+        background-color: $main-background-light;
+        border: none;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        word-break: break-all;
+        color: $color-text-primary;
+        padding: 12px 8px;
+        cursor: auto;
+      }
+    }
+
+    &-select {
+      width: 100% !important;
+
+      .ant-select-selector {
+        color: $color-text-primary;
+        background-color: $main-background-light !important;
+        border: none !important;
+        height: 44px !important;
+
+        .ant-select-selection-search,
+        .ant-select-selection-item {
+          padding: 6px 0 0 0;
+          color: $color-text-primary;
+        }
+
+        .ant-select-selection-placeholder {
+          padding: 6px 0 0 0;
+        }
+      }
+
+      .ant-select-arrow {
+        color: white;
+      }
+    }
+  }
+
+  &-btnSave {
+    padding: 8px 116px;
+    background-color: $main-color;
+    color: $main-background-color;
+    margin-top: 40px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "name": "@torititech/fitrade",
+  "version": "1.0.0",
+  "description": "An awesome product made by Toriti Tech Team https://t.me/ToritiTech",
+  "main": "server.js",
+  "dependencies": {
+    "aedes": "^0.46.1",
+    "bcrypt": "^3.0.6",
+    "bcryptjs": "^2.4.3",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "child_process": "^1.0.2",
+    "copyright-header": "^0.4.6",
+    "crypto": "^1.0.1",
+    "dateformat": "^3.0.3",
+    "deep-diff": "^1.0.2",
+    "dotenv": "^4.0.0",
+    "faker": "^5.5.3",
+    "fs": "0.0.1-security",
+    "glue": "^4.1.0",
+    "good": "^7.2.0",
+    "good-console": "^6.4.0",
+    "good-loggly": "^3.1.0",
+    "good-squeeze": "^5.0.2",
+    "hapi": "^16.4.3",
+    "hapi-auth-jwt": "^4.0.0",
+    "hapi-swagger": "^7.7.0",
+    "inert": "^4.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^1.0.3",
+    "kue": "^0.11.6",
+    "mocha": "^8.3.2",
+    "mysql": "^2.15.0",
+    "node-cron": "^3.0.0",
+    "node-telegram-bot-api": "^0.61.0",
+    "nodemailer": "^6.7.0",
+    "otplib": "^12.0.1",
+    "path": "^0.12.7",
+    "prettier": "^2.7.1",
+    "qrcode": "^1.4.4",
+    "redis": "^3.1.2",
+    "request-ip": "^3.3.0",
+    "sha256": "^0.2.0",
+    "vision": "^4.1.1",
+    "websocket-stream": "^5.5.2",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.2.0",
+    "nodemon": "^2.0.12"
+  },
+  "scripts": {
+    "test": "mocha Test/index.js --timeout 15000 --exit",
+    "start": "node server",
+    "format": "./node_modules/.bin/prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss,md}' & ./node_modules/.bin/copyright-header copyright-header --fix --copyrightHolder 'Toriti Tech Team https://t.me/ToritiTech'",
+    "dev": "nodemon --exec 'npm run eslint & npm start'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://t.me/ToritiTech"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "ChauNNT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://t.me/ToritiTech"
+  },
+  "homepage": "https://t.me/ToritiTech"
+}

@@ -1,0 +1,107 @@
+
+ #search-input, .dataTable-filter{
+  max-width: unset !important;
+ }
+  
+.dataTable-select {
+  width: 100px !important;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.dropdownItem-search{
+  width: 100% !important;
+}
+.select-filter{
+  width: 100%;
+}
+.form-control__date {
+ &.form-control[readonly] {
+   background-color: transparent !important;
+ }
+}
+.input-add-image {
+  .custom-file {
+    background: #987ADE;
+    border-radius: 10px;
+    width: 113px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 0;
+    &-input {
+      background: #987ADE;
+      cursor: pointer;
+    }
+    &-label {
+      background: #987ADE;
+      color: #FFFFFF !important;
+      border: none;
+      cursor: pointer;
+      font-weight: 700;
+      display: none;
+      &::after {
+        background: #987ADE;
+        content: '' !important;
+        padding: 0;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.datatable-custom-project{
+  min-height: 150px !important;
+  .rdt_TableHeadRow{
+    background-color: #F6F3FC;
+    border-top: 1px solid #485879;
+    border-bottom: 1px solid #485879;
+    min-height: 0;
+    height: 39px;
+    .rdt_TableCol_Sortable{
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      color: #333333;
+    }
+  }
+  .rdt_TableBody{
+    .rdt_TableRow{
+      height: 60px;
+      border-bottom: 1px solid #485879;
+      .rdt_TableCell{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #333333;
+      }
+    }
+  }
+  .icdHOq,.iXaluh{
+    height: 100px;
+  }
+}
+.custom-input-pj{
+  border-color: hsl(0, 0%, 80%);
+  background-color: hsl(0, 0%, 100%) ;
+  &::placeholder{
+    color: #6e6b7b;
+  }
+  &:disabled{
+    background-color: hsl(0, 0%, 95%);
+    border-color: #ebe9f1;
+  }
+}
+ .flatpickr-input{
+   background-color: transparent;
+ }
+.custom-flatpickr-pj{
+  background-color: white;
+  border-color: hsl(0, 0%, 80%);
+  opacity: 1!important;
+  &::placeholder{
+    color: #6e6b7b;
+  }
+  &:disabled{
+    background-color: hsl(0, 0%, 95%)!important;
+    border-color: #ebe9f1;
+  }
+}

@@ -1,0 +1,77 @@
+.accountAdmin {
+  padding: 20px;
+}
+.gameRecordTypeUp {
+  padding: 5px;
+  border-radius: 100%;
+  border-color: green;
+  color: green;
+  border: 1px solid;
+  height: 28px;
+  width: 28px;
+  text-align: center;
+}
+.gameRecordTypeDonw {
+  padding: 5px;
+  border-radius: 100%;
+  border-color: red;
+  color: red;
+  border: 1px solid;
+  height: 28px;
+  width: 28px;
+  text-align: center;
+}
+.gameRecordTypeOdd {
+  padding: 5px;
+  border-radius: 100%;
+  border-color: purple;
+  color: purple;
+  border: 1px solid;
+  height: 28px;
+  width: 28px;
+  text-align: center;
+}
+.gameRecordTypeEven {
+  padding: 5px;
+  border-radius: 100%;
+  border-color: brown;
+  color: brown;
+  height: 28px;
+  width: 28px;
+  text-align: center;
+  border: 1px solid;
+}
+.form-check {
+  padding: initial;
+}
+.form-group {
+  margin-bottom: initial;
+}
+.custom-form-group {
+  width: 400px;
+}
+label {
+  display: flex !important;
+  align-items: center !important;
+  margin-bottom: initial;
+}
+.label-green {
+  width: 60px;
+  background: #319268;
+  color: white;
+  padding: 7px;
+  border-radius: 8px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+.label-red {
+  width: 60px;
+  background: #c56056;
+  color: white;
+  padding: 7px;
+  border-radius: 8px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}

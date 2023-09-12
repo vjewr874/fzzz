@@ -1,0 +1,54 @@
+@import '../../../assets/styles/helpers/variables';
+#contact {
+  .banner {
+    display: flex;
+    padding: 48px;
+  }
+  .image {
+    width: 175px;
+    height: 130px;
+    margin: auto;
+  }
+  .container {
+    padding: 0 8px;
+  }
+  .button {
+    width: 100%;
+    height: 56px;
+    background: #ffffff;
+    border: 1px solid rgba(174, 185, 199, 0.2);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+    margin-bottom: 16px;
+    padding: 12px;
+    @include display-flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+  .icon {
+    height: 32px;
+    width: 32px;
+    background: no-repeat center;
+  }
+  .text {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    margin: 8px;
+  }
+  .left {
+    display: flex;
+  }
+  .right {
+    padding: 8px 0;
+  }
+  .arrow {
+    height: 16px;
+    width: 16px;
+  }
+}

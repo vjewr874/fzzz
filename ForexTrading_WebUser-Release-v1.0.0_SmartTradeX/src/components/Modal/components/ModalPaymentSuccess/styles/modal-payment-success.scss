@@ -1,0 +1,49 @@
+@import '../../../../../assets/styles/helpers/variables';
+#modal-payment-success {
+  .container {
+    &-modal {
+      &__payment {
+        min-width: 90%;
+        max-width: 100%;
+        padding: 0 20px 24px;
+        text-align: center;
+        .title {
+          font-weight: 800;
+          font-size: 1rem;
+          margin-bottom: 12px;
+          text-transform: uppercase;
+        }
+        .content {
+          font-size: 0.875rem;
+          color: #092249;
+          margin-bottom: 24px;
+        }
+      }
+    }
+    &-image {
+      width: 100%;
+      max-width: 200px;
+      margin: auto;
+      .image {
+        width: 100%;
+        padding-top: 100%;
+      }
+    }
+    &-btn {
+      @include display-flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .btn {
+        &-action {
+          width: 50%;
+          &:hover {
+            color: $main-color !important;
+          }
+        }
+      }
+    }
+  }
+}

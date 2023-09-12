@@ -1,0 +1,156 @@
+@import '../../../assets/styles/helpers/variables';
+
+#Chart {
+  .chart {
+    .chartHeader {
+      padding: 22px 20px 12px;
+
+      &Top {
+        @include display-flex;
+        justify-content: space-between;
+
+        &Contain {
+          @include display-flex;
+          align-items: center;
+
+          .imgCoin {
+            width: 24px;
+            height: 24px;
+          }
+
+          .name {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            padding: 0 8px;
+          }
+
+          .imgDown {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+
+      &Amount {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 40px;
+        margin-top: 10px;
+      }
+
+      &Percent {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+      }
+
+      .red {
+        color: $color_primary_warn;
+      }
+
+      .green {
+        color: $color_primary;
+      }
+    }
+
+    .chartDetail {
+      background-color: $main-background-light;
+      border-radius: 24px 24px 0px 0px;
+      padding-top: 20px;
+      padding-right: 8px;
+      padding-left: 8px;
+      padding-bottom: 20px;
+    }
+
+    &Sort {
+      @include display-flex;
+      justify-content: space-between;
+      padding: 8px 18px 28px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      background-color: $main-background-light;
+
+      &Item {
+        color: #ffcd08;
+        background-color: rgba(255, 205, 8, 0.1);
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        padding: 2px 8px;
+        text-align: center;
+        border-radius: 10px;
+      }
+    }
+
+    .chartFooter {
+      padding: 12px 20px 20px;
+
+      &Time {
+        @include display-flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .count {
+          img {
+            width: 20px;
+            height: 20px;
+            margin-right: 6px;
+          }
+
+          span {
+            font-weight: 500;
+            font-size: 0.813rem;
+            line-height: 1.25rem;
+            color: #ec4f4f;
+          }
+        }
+
+        .period {
+          font-weight: 400;
+          font-size: 0.913rem;
+          line-height: 1.25rem;
+          color: rgba(255, 255, 255, 0.75);
+        }
+      }
+
+      &Button {
+        padding-top: 24px;
+        @include display-flex;
+        justify-content: space-between;
+
+        .red {
+          background-color: #ff715e;
+        }
+
+        .green {
+          background-color: #36ffb5;
+        }
+
+        .btnChart {
+          border-radius: 8px;
+          margin: 0;
+          padding: 2px 0;
+          text-align: center;
+          width: calc(50% - 4px);
+          @include display-flex;
+          flex-direction: column;
+
+          span {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #1d1d42;
+          }
+
+          strong {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #1d1d42;
+            letter-spacing: 0.02em;
+          }
+        }
+      }
+    }
+  }
+}

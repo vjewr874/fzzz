@@ -1,0 +1,475 @@
+@import '../../../assets/styles/helpers/variables';
+
+#recharge {
+  .recharge {
+    padding: 20px;
+
+    .depositRequest {
+      .accountInfo {
+        &-header {
+          @include display-flex;
+          margin-top: 28px;
+
+          img {
+            width: 20px;
+            height: 20px;
+          }
+
+          span {
+            margin-left: 8px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            color: #ffffff;
+          }
+        }
+
+        &-info {
+          margin-top: 24px;
+          background-color: $main-background-light;
+          padding: 4px 12px;
+          border-radius: 14px;
+
+          &-item {
+            padding: 16px 0;
+            @include display-flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+            &:last-child {
+              border-bottom: none;
+            }
+
+            .content {
+              @include display-flex;
+              align-items: center;
+              text-align: right;
+              background-color: $main-background-light;
+              border: none;
+              font-weight: 500;
+              font-size: 1rem;
+              line-height: 1.25rem;
+              word-break: break-all;
+              color: $color_text_primary;
+              max-width: 63%;
+
+              .img {
+                height: 20px;
+                width: 20px;
+                margin-left: 8px;
+                margin-top: -2px;
+              }
+            }
+
+            .title,
+            .setting {
+              cursor: pointer;
+              font-weight: 400;
+              font-size: 0.938rem;
+              line-height: 1.25rem;
+              color: rgba(255, 255, 255, 0.75);
+              max-width: 37%;
+
+              img {
+                height: 20px;
+                width: 20px;
+                margin-top: -4px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .colorGreenTab {
+      .ant-tabs-ink-bar,
+      .ant-tabs-ink-bar-animated {
+        background: $color_primary;
+      }
+    }
+
+    .colorRedTab {
+      .ant-tabs-ink-bar,
+      .ant-tabs-ink-bar-animated {
+        background: $color_primary_warn_light;
+      }
+    }
+
+    .tab-recharge-withdraw {
+      .ant-tabs-nav-list {
+        width: 100%;
+        text-align: center;
+      }
+
+      .ant-tabs-tab {
+        width: 50%;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        justify-content: center;
+        color: rgba(255, 255, 255, 0.5);
+        margin: 0;
+
+        &-active {
+          .colorGreen {
+            color: #36ffb5 !important;
+
+            & ~ .ant-tabs-ink-bar {
+              background: #36ffb5 !important;
+            }
+          }
+
+          .colorRed {
+            color: #ff647c !important;
+
+            & ~ .ant-tabs-ink-bar {
+              background: #ff647c !important;
+            }
+          }
+
+          // &~.ant-tabs-ink-bar {
+          //   background: #36FFB5;
+          // }
+          & > div[aria-controls='rc-tabs-0-panel-0'] {
+            & ~ .ant-tabs-ink-bar {
+              background: #36ffb5;
+            }
+          }
+
+          & > div[aria-controls='rc-tabs-0-panel-1'] {
+            & ~ .ant-tabs-ink-bar {
+              background: #ff647c !important;
+            }
+          }
+        }
+      }
+
+      .ant-tabs-nav-operations {
+        display: none;
+      }
+
+      &-container {
+        width: 100%;
+        height: 72px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 16px 0;
+      }
+
+      &-row {
+        @include display-flex;
+        justify-content: space-between;
+        text-decoration: none;
+        align-items: center;
+      }
+
+      &-left {
+        @include display-flex;
+      }
+
+      &-right {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        //padding-top: 18px;
+        color: #36ffb5;
+      }
+
+      &-img {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+      }
+
+      &-text {
+        margin-bottom: 2px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ffffff;
+      }
+
+      &-time {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .no-data {
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+      }
+
+      .text {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #ffffff;
+      }
+
+      .input-money {
+        padding-top: 28px;
+
+        .text-top {
+          padding-bottom: 12px;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 20px;
+          color: rgba(255, 255, 255, 0.75);
+        }
+
+        .input {
+          border: none;
+          margin: 0px;
+          background-color: $main-background-light;
+          background: $main-background-light;
+          width: 100%;
+          height: auto;
+          padding: 8px 0;
+          color: #ffffff;
+
+          &::placeholder {
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            color: rgba(255, 255, 255, 0.3);
+          }
+        }
+
+        .inputText {
+          border: none;
+          margin: 0px;
+          background-color: $main-background-light;
+          background: $main-background-light;
+          width: 100%;
+          color: #ffffff;
+          height: 54px;
+          margin-top: 12px;
+
+          &::placeholder {
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            color: rgba(255, 255, 255, 0.7);
+          }
+        }
+
+        // input {
+        //   width: 100%;
+        //   padding: 12px 8px;
+        //   background: #26264E;
+        //   border: 1px solid rgba(255, 255, 255, 0.08);
+        //   border-radius: 10px;
+        //   color: #FFFFFF;
+        // }
+
+        .text-bottom {
+          padding-top: 4px;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 20px;
+          color: #ffcd08;
+        }
+      }
+
+      .btnSave {
+        background-color: $main-color !important;
+        background: $main-color !important;
+        width: 100%;
+        margin-top: 40px;
+        height: 40px;
+        border-radius: 14px;
+        cursor: pointer;
+        border: none;
+        border-radius: 8px;
+
+        span {
+          font-weight: 500 !important;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          color: $main-background-dark !important;
+        }
+
+        img {
+          width: 16px;
+          height: 16px;
+          margin-left: 8px;
+          margin-top: -4px;
+        }
+      }
+
+      .note {
+        margin-top: 20px;
+
+        .title {
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 20px;
+          color: #ffcd08;
+        }
+
+        .content {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 20px;
+          color: #ffffff;
+        }
+      }
+    }
+
+    &-uploadImage {
+      margin-top: 28px;
+
+      &-title {
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        letter-spacing: 0.02em;
+        color: white;
+      }
+
+      &-content {
+        margin-top: 12px;
+
+        .renderNoneImg {
+          width: 100%;
+          padding-top: 48px;
+          border: 2px solid rgba(255, 255, 255, 0.1);
+          border-radius: 14px;
+          position: relative;
+
+          &-icon {
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            color: $color_text_primary;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+
+            img {
+              margin-top: -4px;
+              margin-left: 8px;
+            }
+          }
+        }
+
+        .renderImg {
+          width: 100%;
+          border: 2px solid rgba(255, 255, 255, 0.1);
+          border-radius: 14px;
+          position: relative;
+          padding: 8px;
+
+          &-iconDelete {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+          }
+
+          .imageRecharge {
+            height: 250px;
+            width: 250px;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+.profileUser {
+  &-header {
+    @include display-flex;
+    margin-top: 32px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    span {
+      margin-left: 8px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+    }
+  }
+
+  &-BankWallet {
+    &-title {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+      color: $color-text-primary-light;
+      margin: 24px 0 12px;
+    }
+
+    &-input {
+      background-color: $main-background-light;
+      background: $main-background-light !important;
+      border: none;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.25rem;
+      word-break: break-all;
+      color: $color-text-primary;
+      padding: 12px 8px;
+
+      &::placeholder {
+        color: $color-text-primary-very-light;
+      }
+
+      &:disabled {
+        background-color: $main-background-light;
+        border: none;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        word-break: break-all;
+        color: $color-text-primary;
+        padding: 12px 8px;
+        cursor: auto;
+      }
+    }
+
+    &-select {
+      width: 100% !important;
+
+      .ant-select-selector {
+        color: $color-text-primary;
+        background-color: $main-background-light !important;
+        border: none !important;
+        height: 44px !important;
+
+        .ant-select-selection-search,
+        .ant-select-selection-item {
+          padding: 6px 0 0 0;
+          color: $color-text-primary;
+        }
+
+        .ant-select-selection-placeholder {
+          padding: 6px 0 0 0;
+        }
+      }
+
+      .ant-select-arrow {
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+.promotion {
+  &__nav {
+    background-color: #fff;
+    ul {
+      margin-bottom: 0;
+      li.active {
+        color: rgb(223, 56, 50);
+      }
+    }
+  }
+  &__content {
+    margin-top: 10px;
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+    &-title {
+      background-color: rgb(244, 244, 244);
+      padding: 10px 0;
+    }
+    &-statistical {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      .item {
+        border: 1px solid rgb(223, 56, 50);
+        background-color: rgba(223, 56, 50, 0.02);
+        padding: 10px 5px;
+        border-radius: 10px;
+        font-size: 14px;
+        p {
+          margin-bottom: 5px;
+        }
+      }
+      .item1 {
+        width: 41%;
+        text-align: center;
+        p:first-child {
+          font-weight: bold;
+          font-size: 16px;
+        }
+        p:nth-child(2) {
+          font-size: 20px;
+          color: rgb(223, 56, 50);
+          font-weight: bold;
+        }
+      }
+      .item2 {
+        width: 50%;
+        padding-left: 10px;
+        p {
+          span {
+            color: rgb(223, 56, 50);
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    &-filter {
+      padding: 15px 0;
+      p {
+        font-size: 18px;
+      }
+      .filter {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        &-button {
+          width: 100%;
+          max-width: 80px;
+          border: unset;
+          background: rgb(228, 38, 34);
+          color: #fff;
+          border-radius: 5px;
+          font-size: 15px;
+          box-shadow: 1px 1px 5px 1px #e42522a9;
+          padding: 9px 0;
+        }
+        &-input {
+          padding-left: 12px !important;
+          &::placeholder {
+            color: #000;
+          }
+        }
+        &-input,
+        &-select {
+          max-width: 122px;
+          border-radius: 5px;
+          text-align: start;
+          border: 1px solid #ababab;
+          &:focus,
+          &:hover {
+            border: 1px solid #faa09d;
+          }
+        }
+        .ant-select-selector {
+          border-radius: 5px !important;
+          height: 100% !important;
+          display: flex;
+          align-items: center;
+          padding-left: 9px !important;
+          border: unset !important;
+        }
+      }
+      .total {
+        span {
+          font-size: 15px;
+        }
+        span:first-child {
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+}

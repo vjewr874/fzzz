@@ -1,0 +1,52 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.calendar {
+  display: flex;
+}
+.value {
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+  line-height: 10px;
+  border-radius: 10px 10px 0 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eeeff2));
+  background: linear-gradient(180deg, #fff, #eeeff2);
+  width: 100%;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.label {
+  line-height: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #9da7b3;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 35px;
+}
+.items {
+  box-shadow: 0 3px 4px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: #fff;
+  -webkit-perspective: 20px;
+  perspective: 40px;
+  width: 70px;
+  height: 70px;
+}
+.calendar {
+  padding: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+.title {
+  font-size: 20px;
+  line-height: 40px;
+}

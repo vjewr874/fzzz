@@ -1,0 +1,14 @@
+.myTeam {
+  .cpn_table table {
+    width: auto;
+  }
+  .cpn_table .ant-table-thead > tr > th,
+  .cpn_table .ant-table-tbody > tr > td,
+  .cpn_table .ant-table tfoot > tr > th,
+  .cpn_table .ant-table tfoot > tr > td {
+    // min-width: unset;
+    padding: 6px 5.2px;
+    min-width: 70px;
+    font-size: 14px;
+  }
+}

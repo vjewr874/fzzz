@@ -1,0 +1,166 @@
+@import '../../../../../assets/styles/helpers/variables';
+#lottery-list {
+  .rowNumberLottery {
+    @include display-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -2px;
+    margin-right: -2px;
+    &-item {
+      width: calc(33.333333333% - 2px) !important;
+      padding-top: 4px;
+      padding-bottom: 4px !important;
+      .lotteryNumber {
+        .icon {
+          &-tick {
+            transition: none !important;
+            top: 3px !important;
+            right: 3px !important;
+          }
+        }
+        &-contain {
+          text-align: center;
+          width: 100%;
+          .lotteryNumber-number {
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1rem;
+            color: #092249;
+            letter-spacing: 0.04rem;
+          }
+        }
+      }
+      .lotteryNumber-quantity {
+        margin-top: 4px;
+        color: #092249;
+        font-weight: 700;
+        font-size: 0.75rem;
+        line-height: 1rem;
+      }
+    }
+  }
+  .container {
+    &-lottery {
+      &-list {
+        &.row {
+          margin-right: calc(-0.5 * 0.125rem);
+          margin-left: calc(-0.5 * 0.125rem);
+        }
+        .container-lottery {
+          padding-left: 0.125rem;
+          padding-right: 0.125rem;
+          padding-bottom: 0.5rem;
+          &.active {
+            .lotteryNumber-quantity {
+              color: #f5493a;
+            }
+            .lottery {
+              background: #fdebea;
+              border: 1.2px solid #f5493a;
+              cursor: pointer;
+              &-quantity {
+                color: #f5493a;
+              }
+              &-input {
+                background: #f5493a;
+                border: 1px solid transparent;
+                color: #fff;
+              }
+              .icon {
+                &-tick {
+                  opacity: 1;
+                  visibility: visible;
+                }
+              }
+            }
+          }
+          &.active-special {
+            .lotteryNumber-quantity {
+              color: #7a5ef1;
+            }
+            .lottery {
+              background: #7a5ef11a;
+              border: 1.2px solid #7a5ef1;
+              cursor: pointer;
+              &-quantity {
+                color: #7a5ef1;
+              }
+              &-input {
+                background: #7a5ef1;
+                border: 1px solid transparent;
+                color: #fff;
+              }
+              .icon {
+                &-tick {
+                  opacity: 1;
+                  visibility: visible;
+                }
+              }
+            }
+          }
+        }
+        .lottery {
+          position: relative;
+          color: #092249;
+          background: #fafafa;
+          border: 1.2px solid #d9d9d9;
+          border-radius: 6px;
+          text-align: center;
+          box-sizing: border-box;
+          cursor: pointer;
+          padding: 8px;
+          transition: 0.3s;
+          @include display-flex;
+          justify-content: space-between;
+          align-items: center;
+          .icon {
+            &-tick {
+              position: absolute;
+              bottom: 4px;
+              right: 4px;
+              width: 16px;
+              height: 16px;
+              opacity: 0;
+              visibility: hidden;
+              transition: 0.3s;
+            }
+          }
+          &-number {
+            font-size: 1.125rem;
+            margin-bottom: 4px;
+            font-weight: 700;
+          }
+          &-input {
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            border-radius: 2px;
+            width: 64px;
+            padding: 4px;
+            margin: auto auto 8px;
+            color: #092249;
+            font-size: 0.875rem;
+            line-height: 1;
+          }
+          &-quantity {
+            font-size: 0.875rem;
+            line-height: 1.5;
+            span {
+              color: #e1584c;
+            }
+          }
+        }
+      }
+    }
+    &-image {
+      width: 65%;
+      position: relative;
+      .image {
+        width: 100%;
+        padding-top: 52.08333333333333%;
+      }
+    }
+    &-info {
+      width: 35%;
+    }
+  }
+}

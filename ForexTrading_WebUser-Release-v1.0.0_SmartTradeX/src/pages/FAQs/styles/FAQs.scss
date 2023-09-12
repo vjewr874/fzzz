@@ -1,0 +1,62 @@
+@import '../../../assets/styles/helpers/variables';
+#FAQs {
+  position: relative;
+  .FAQs {
+    &-container {
+      padding: 20px 8px;
+      @include display-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    &-item {
+      padding: 12px;
+      @include display-flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #ffffff;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.04);
+      border-radius: 10px;
+      width: 100%;
+      cursor: pointer;
+      &-title {
+        font-size: 0.875rem;
+        font-weight: 700;
+        line-height: 2rem;
+      }
+      &-icon {
+        height: 1rem;
+        width: 1rem;
+      }
+    }
+    &-guide {
+      background: #0073ff;
+      padding: 12px;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 8px;
+      margin: 0 8px;
+      align-items: center;
+      cursor: pointer;
+      &-left {
+        display: flex;
+        align-items: center;
+      }
+      &-img {
+        height: 16px;
+        width: 16px;
+      }
+      &-right {
+        height: 12px;
+        width: 6px;
+      }
+      &-text {
+        padding-left: 8px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        color: #ffffff;
+      }
+    }
+  }
+}

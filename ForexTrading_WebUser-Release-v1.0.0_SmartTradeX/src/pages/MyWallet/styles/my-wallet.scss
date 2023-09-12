@@ -1,0 +1,64 @@
+#MyWallet {
+  position: relative;
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+  .history {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+    &-container {
+      margin: 10px 0 20px 0;
+      background: #26264e;
+      border: 1px solid rgba(174, 185, 199, 0.2);
+      box-shadow: 0px 12px 24px rgba(20, 20, 50, 0.25);
+      border-radius: 14px;
+    }
+
+    &-row {
+      padding: 12px 13px 0 12px;
+    }
+
+    &-img {
+      width: 32px;
+      height: 32px;
+    }
+
+    &-text {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+    }
+
+    &-line {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+      &-left {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.75);
+      }
+
+      &-right {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        color: #ffffff;
+      }
+
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}

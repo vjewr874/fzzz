@@ -1,0 +1,40 @@
+#modal-regulations {
+  .regulations {
+    box-shadow: 0 4px 16px rgba(34, 34, 34, 0.28);
+    border-radius: 12px;
+    &-title {
+      padding: 16px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: #ffffff;
+      background: #0073ff;
+      border-radius: 12px 12px 0 0;
+    }
+    &-content {
+      height: 252px;
+      font-size: 14px;
+      line-height: 20px;
+      color: #092249;
+      overflow: auto;
+      overflow: -moz-scrollbars-none;
+      -ms-overflow-style: none;
+      padding: 16px 12px;
+    }
+    &-content::-webkit-scrollbar {
+      width: 0 !important;
+      display: none;
+    }
+    &-close {
+      padding: 10px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: rgba(6, 23, 49, 0.75);
+      border-top: 2px solid rgba(174, 185, 199, 0.2);
+      cursor: pointer;
+    }
+  }
+}

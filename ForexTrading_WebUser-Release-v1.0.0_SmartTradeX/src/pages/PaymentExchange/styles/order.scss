@@ -1,0 +1,153 @@
+@import '../../../assets/styles/helpers/variables';
+
+#PaymentExchange {
+  margin-bottom: 86px;
+
+  .order {
+    &-header {
+      height: 48px;
+      position: fixed !important;
+      top: 0;
+      left: 0;
+      right: 0;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      z-index: 99;
+      background: #1d1d42;
+      width: 100%;
+      max-width: 384px;
+      margin: auto;
+
+      @media (max-width: 768px) {
+        &__navbar {
+          max-width: 100%;
+        }
+      }
+
+      &-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    &-tabs {
+      padding: 20px;
+      margin-top: 48px;
+
+      .ant-tabs-tab {
+        width: 25%;
+        justify-content: center;
+      }
+    }
+
+    &-tab {
+      .ant-tabs-nav {
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      .ant-tabs-nav-list {
+        width: 100%;
+      }
+
+      .ant-tabs-tab {
+        width: 25%;
+        justify-content: center;
+        color: rgba(255, 255, 255, 0.5);
+        margin: 0;
+      }
+
+      // .ant-tabs-tabpane {
+      //   padding: 20px 0;
+      // }
+
+      &-container {
+        //margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        background: #26264e;
+        box-shadow: 0px 12px 24px rgba(20, 20, 50, 0.25);
+        border-radius: 14px;
+
+        &-row {
+          @include display-flex;
+          padding: 20px 12px 16px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 20px;
+          color: #ffffff;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        &-row1 {
+          padding: 0 12px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 20px;
+          color: #ffffff;
+
+          .border__bottom {
+            @include display-flex;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 16px 0;
+            align-items: center;
+          }
+
+          &:last-child {
+            padding-bottom: 0;
+
+            .border__bottom {
+              border-bottom: none;
+              padding-bottom: 0;
+            }
+          }
+        }
+
+        &-left {
+          color: rgba(255, 255, 255, 0.75);
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 20px;
+        }
+
+        &-right {
+          color: #ffffff;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .custom-pagination {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 16px;
+      .ant-pagination-item-link,
+      .ant-pagination-item {
+        background: $main-background-color;
+        color: white;
+        .anticon {
+          color: white;
+        }
+      }
+      .ant-pagination-item-active {
+        color: $main-background-color;
+        background: $main-color;
+      }
+      .ant-pagination-item-ellipsis {
+        color: white;
+      }
+    }
+  }
+}

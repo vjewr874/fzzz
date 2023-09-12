@@ -1,0 +1,63 @@
+@import '../../../../../assets/styles/helpers/variables';
+.hallOrder {
+  padding-bottom: 1px;
+  &-contain {
+    margin-bottom: 20px;
+    background-color: $main-background-light;
+    box-shadow: 0px 12px 24px rgba(20, 20, 50, 0.25);
+    border-radius: 14px;
+    padding: 12px 12px;
+    color: white;
+  }
+  &-item {
+    padding: 8px 0;
+    gap: 4px;
+    @include display-flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.75);
+    //border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    word-break: break-word;
+    &:last-child {
+      border-bottom: none;
+    }
+    .small {
+      font-weight: 400;
+      font-size: 0.938rem;
+      line-height: 1.25rem;
+      color: rgba(255, 255, 255, 0.75);
+    }
+    .large {
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.25rem;
+      color: white;
+    }
+    .left {
+      width: calc(50% - 4px);
+    }
+    .right {
+      width: 50%;
+      margin-left: 4px;
+    }
+    .red {
+      color: #ff647c;
+    }
+  }
+
+  .btnHallOrderSale {
+    padding: 5px 16px;
+    background: $main-color;
+    border: 1px solid $main-color;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.938rem;
+    line-height: 1rem;
+    color: $main-background-color;
+    cursor: pointer;
+    width: fit-content;
+    img {
+      margin-left: 8px;
+    }
+  }
+}

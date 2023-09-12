@@ -1,0 +1,79 @@
+@import '../../../assets/styles/helpers/variables';
+
+#ReferFriends {
+  padding: 20px;
+
+  .overview {
+    &-container {
+      width: 100%;
+      background: #26264e;
+      box-shadow: 4px 12px 24px rgba(20, 20, 50, 0.5);
+      border-radius: 20px;
+
+      &-info {
+        padding: 40px 0;
+
+        &-id {
+          @include display-flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-bottom: 12px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        &-qr {
+          width: 136px;
+          height: 136px;
+          margin: 20px auto 30px;
+        }
+      }
+
+      &-text {
+        text-align: center;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .left {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #36ffb5;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .right {
+    @include display-flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    word-break: break-all;
+    margin-right: 12px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    &-blue {
+      font-style: italic;
+      font-weight: 400;
+      font-size: 1rem;
+      text-decoration-line: underline;
+      color: #4062ed;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 95%;
+      white-space: nowrap;
+    }
+
+    &-img {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+@import '../../../../../assets/styles/helpers/variables';
+
+#ModalHallOrderSale {
+  background-color: $main-background-color;
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+
+  .ModalHallOrderSale {
+    &-header {
+      padding: 0 16px;
+      background-color: $main-background-light;
+      height: 52px;
+      @include display-flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .left,
+      .right {
+        width: 24px;
+        height: 24px;
+      }
+      img {
+        cursor: pointer;
+      }
+    }
+
+    &-content {
+      margin: 20px 0;
+      .cover-content {
+        p,
+        span {
+          background-color: transparent !important;
+          color: white !important;
+        }
+        width: 100%;
+        padding: 0 12px;
+        max-height: 80vh;
+        overflow-y: auto;
+        .title {
+          font-weight: 400;
+          font-size: 0.938rem;
+          line-height: 1.25rem;
+          color: rgba(255, 255, 255, 0.75);
+        }
+        .content {
+          font-weight: 500;
+          font-size: 1rem;
+          line-height: 1.25rem;
+          padding-bottom: 10px;
+        }
+        .dateTime {
+          font-weight: 400;
+          font-size: 0.875rem;
+          line-height: 1rem;
+          color: rgba(255, 255, 255, 0.75);
+          font-style: italic;
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    &-btn {
+      margin: 40px 12px 0;
+      @include display-flex;
+      justify-content: space-between;
+
+      .btnSale-item {
+        width: calc(50% - 6px);
+        padding: 8px 0;
+        text-align: center;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        cursor: pointer;
+      }
+
+      .cancel {
+        background-color: $main-background-light;
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .sale {
+        background-color: $main-color;
+        color: $main-background-color;
+        border: none;
+      }
+    }
+  }
+}
+
+.modal-container {
+  width: 90%;
+}

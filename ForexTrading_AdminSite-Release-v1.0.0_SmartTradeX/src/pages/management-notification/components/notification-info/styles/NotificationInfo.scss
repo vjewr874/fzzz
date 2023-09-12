@@ -1,0 +1,105 @@
+.notification-info{
+  .detail-title{
+    font-style: normal!important;
+    font-weight: 400!important;
+    font-size: 20px!important;
+    line-height: 23px!important;
+    color: black;
+    margin-bottom: 30px;
+  }
+  .detail-content{
+    .avatar{
+      width: 91px;
+      height: 91px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: auto;
+    }
+    label{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+      margin-bottom: 8px;
+    }
+    .form-group{
+      margin-bottom: 28px;
+    }
+  }
+  .container{
+    &-input {
+      &-file {
+        &-customer {
+          position: relative;
+          width: 100%;
+          max-width: 307px;
+          aspect-ratio: 307/156;
+          border: 1px dashed #000000;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 34px;
+          &:hover {
+            .icon-remove {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+          .input-file {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            cursor: pointer;
+          }
+          .icon-remove {
+            position: absolute;
+            top: -13.5px;
+            right: -13.5px;
+            background: #A185E1;
+            border-radius: 50%;
+            padding: 5px;
+            color: #fff;
+            cursor: pointer;
+            width: 27px;
+            height: 27px;
+            opacity: 0;
+            visibility: hidden;
+            transition: .3s;
+          }
+        }
+      }
+    }
+  }
+  .content-detail-message{
+    .banner{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #081131;
+      margin-bottom: 5px;
+    }
+    .guild{
+      margin-bottom: 10px;
+      padding-left: 25px;
+      li{
+        font-style: italic;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 25px;
+      }
+    }
+    .label{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #081131;
+      margin-bottom: 11px;
+    }
+  }
+}

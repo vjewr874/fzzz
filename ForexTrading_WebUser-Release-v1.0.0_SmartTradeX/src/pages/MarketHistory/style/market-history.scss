@@ -1,0 +1,64 @@
+@import '../../../../src/assets/styles/helpers/variables';
+
+#MarketHistory {
+  .marketHistory {
+    padding: 20px;
+
+    .left {
+      width: 50%;
+    }
+
+    .mid {
+      width: 11%;
+      text-align: center;
+    }
+
+    .right {
+      text-align: right;
+      width: 39%;
+    }
+
+    &-header {
+      @include display-flex;
+      color: $color_text_primary_light;
+      font-weight: 600;
+      font-size: 0.813rem;
+      line-height: 1.25rem;
+      padding-bottom: 4px;
+    }
+
+    &-body {
+      &Item {
+        padding: 12px 0;
+        border-bottom: 1px solid $color_border_primary;
+        &:last-child {
+          border-bottom: none;
+        }
+        .warn {
+          color: $color_primary_warn_light;
+        }
+        .basic {
+          color: $color_primary;
+        }
+        @include display-flex;
+        .time {
+          font-size: 0.913rem;
+          line-height: 1.25rem;
+          color: $color_text_primary;
+        }
+        .type {
+          text-transform: uppercase;
+          font-weight: 500;
+          font-size: 0.913rem;
+          line-height: 1.25rem;
+          color: $color_text_primary;
+        }
+        .total {
+          font-weight: 500;
+          font-size: 0.913rem;
+          line-height: 1.25rem;
+        }
+      }
+    }
+  }
+}

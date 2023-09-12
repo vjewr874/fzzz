@@ -1,0 +1,120 @@
+@import '../../../../../assets/styles/helpers/variables';
+.container {
+  &-otp {
+    background-color: #1d1d42;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: -48px;
+    overflow: hidden;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    visibility: hidden;
+    z-index: 9999;
+    min-height: calc(100% + 48px);
+    @media #{$media-ipad} {
+      right: -100%;
+    }
+    &.show {
+      visibility: visible;
+      opacity: 1;
+      @media #{$media-ipad} {
+        right: 0;
+      }
+    }
+    &__detail {
+      width: 100%;
+      background-color: #ffffff;
+      height: 100%;
+      padding-top: 48px;
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}
+#TransitionDetail {
+  padding-top: 48px;
+  .transition-detail {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    &-container {
+      margin: 10px 0 20px 0;
+      background: #26264e;
+      border: 1px solid rgba(174, 185, 199, 0.2);
+      box-shadow: 0px 12px 24px rgba(20, 20, 50, 0.25);
+      border-radius: 14px;
+    }
+    &-row {
+      display: flex;
+      padding: 16px 0 12px 12px;
+      align-items: center;
+      border-bottom: 1px solid rgba(174, 185, 199, 0.2);
+    }
+    &-row1 {
+      padding: 12px 13px 0 12px;
+    }
+    &-img {
+      width: 32px;
+      height: 32px;
+    }
+    &-text {
+      &-type {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        color: rgba(6, 23, 49, 0.75);
+        padding-bottom: 4px;
+      }
+      &-money {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        padding-bottom: 4px;
+      }
+      &-image {
+        width: 123px;
+        height: 16px;
+      }
+    }
+    &-line {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      &-left {
+        font-size: 14px;
+        line-height: 16px;
+        color: rgba(255, 255, 255, 0.75);
+      }
+      &-right {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        color: #ffffff;
+      }
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 20px;
+      }
+    }
+    &-button {
+      width: 100%;
+      padding: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: #0073ff;
+      border: 1px solid #0073ff;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+}

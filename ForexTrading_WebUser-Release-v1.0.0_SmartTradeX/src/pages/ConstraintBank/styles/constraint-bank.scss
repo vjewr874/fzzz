@@ -1,0 +1,149 @@
+@import '../../../assets/styles/helpers/variables';
+
+#ConstraintBank {
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+  .constraint {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+    &-infoUser {
+      .title {
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        letter-spacing: 0.02em;
+      }
+      .content {
+        padding: 4px 4px 4px 12px;
+        background-color: $main-background-light;
+        box-shadow: 0px 12px 24px rgba(20, 20, 50, 0.25);
+        border-radius: 14px;
+      }
+      .item {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 8px 0;
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+      .name {
+        font-weight: 400;
+        font-size: 0.938rem;
+        line-height: 1.25rem;
+        color: rgba(255, 255, 255, 0.75);
+        width: 37.5%;
+      }
+      .cover-input {
+        @include display-flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px 0;
+        .input {
+          width: 63%;
+          border: none;
+          margin: 0px;
+          background-color: $main-background-light;
+          background: $main-background-light;
+          color: white;
+          text-align: right;
+
+          &::placeholder {
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            color: rgba(255, 255, 255, 0.3);
+          }
+        }
+      }
+      p {
+        border: none;
+        padding: 4px;
+        text-align: right;
+        background-color: $main-background-light;
+        background: $main-background-light;
+        width: 62.5%;
+        color: white;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.25rem;
+      }
+    }
+
+    //&-container {
+    //  margin: 10px 0 20px 0;
+    //  background: #26264E;
+    //  border: 1px solid rgba(174, 185, 199, 0.2);
+    //  box-shadow: 0px 12px 24px rgba(20, 20, 50, 0.25);
+    //  border-radius: 14px;
+    //}
+    //
+    //&-row {
+    //  padding: 12px 13px 0 12px;
+    //}
+    //
+    //&-img {
+    //  width: 32px;
+    //  height: 32px
+    //}
+    //
+    //&-text {
+    //  font-weight: 700;
+    //  font-size: 16px;
+    //  line-height: 20px;
+    //  letter-spacing: 0.02em;
+    //  color: #FFFFFF;
+    //}
+    //
+    //&-line {
+    //  @include display-flex;
+    //  justify-content: space-between;
+    //  padding: 16px 0;
+    //  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    //
+    //  &-left {
+    //    font-weight: 400;
+    //    font-size: 15px;
+    //    line-height: 20px;
+    //    color: rgba(255, 255, 255, 0.75);
+    //  }
+    //
+    //  &-right {
+    //    // font-weight: 500;
+    //    // font-size: 16px;
+    //    // line-height: 20px;
+    //    // @include display-flex;
+    //    // align-items: center;
+    //    // text-align: right;
+    //    // color: #FFFFFF;
+    //
+    //    text-align: right;
+    //    background-color: $main-background-light;
+    //    border: none;
+    //    font-weight: 500;
+    //    font-size: 1rem;
+    //    line-height: 1.25rem;
+    //    word-break: break-all;
+    //  }
+    //
+    //  &:last-child {
+    //    border-bottom: none;
+    //    padding-bottom: 20px;
+    //  }
+    //}
+    //
+    //&-btnSave {
+    //  padding: 8px 116px;
+    //background-color: $main-color;
+    //color: $main-background-color;
+    //margin-top: 40px;
+    //font-weight: 500;
+    //font-size: 1rem;
+    //line-height: 1.25rem;
+    //text-align: center;
+    //border-radius: 8px;
+    //cursor: pointer;
+    //}
+  }
+}

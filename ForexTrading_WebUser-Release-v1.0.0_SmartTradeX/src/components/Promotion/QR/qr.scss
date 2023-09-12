@@ -1,0 +1,30 @@
+.qr {
+  display: flex;
+  justify-content: space-between;
+  &__icon {
+    width: 41%;
+    text-align: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__action {
+    width: 50%;
+    height: max-content;
+    margin: auto 0;
+    .item {
+      width: 100%;
+      border: unset;
+      background: rgb(228, 38, 34);
+      color: #fff;
+      padding: 10px 0px;
+      border-radius: 10px;
+      font-size: 15px;
+      box-shadow: 1px 1px 5px 1px #e42522a9;
+      &:first-child {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

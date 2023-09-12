@@ -1,0 +1,198 @@
+@import '../../../../../../../assets/styles/helpers/variables';
+.container {
+  &-menu {
+    &-list {
+      background-color: #ffffff;
+      width: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: ease-in-out 0.3s;
+      visibility: hidden;
+      z-index: 999;
+      min-height: 100%;
+      @media #{$media-ipad} {
+        left: -100%;
+      }
+      &.show {
+        visibility: visible;
+        opacity: 1;
+        @media #{$media-ipad} {
+          left: 0;
+        }
+      }
+      .menu {
+        width: 100%;
+        background-color: #ffffff;
+        height: 100%;
+        padding-top: 48px;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+  }
+  &-profile {
+    background: $background-linear-main;
+    padding: 4px 8px;
+  }
+  &-info {
+    &__user {
+      @include display-flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      padding-bottom: 12px;
+    }
+    &__wallets {
+      padding: 12px 0;
+    }
+  }
+  &-avatar {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-right: 12px;
+  }
+  &-btn-action {
+    @include display-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 0 16px;
+  }
+  &-urls {
+    padding: 12px 0;
+  }
+}
+
+.info {
+  &-user {
+    @include display-flex;
+    align-items: center;
+    color: #ffffff;
+  }
+  &-detail {
+    .name,
+    .phone-number {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .name {
+      font-weight: 700;
+    }
+    .tag {
+      text-transform: uppercase;
+      color: #ffffff;
+      padding: 2px 4px;
+      background: #f5493a;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.5rem;
+      width: max-content;
+      line-height: 0.75rem;
+    }
+  }
+  &-wallet {
+    @include display-flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &__name {
+      @include display-flex;
+      align-items: center;
+    }
+    &__amount {
+      font-weight: 700;
+    }
+  }
+}
+
+.icon {
+  &__edit {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  &__wallet {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  &__button {
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+  }
+  &__menu {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+  }
+  &__next {
+    width: 16px;
+    height: 16px;
+  }
+}
+.btn {
+  border-radius: 4px;
+  padding: 4px 12px !important;
+  margin: 0 6px !important;
+  color: #fff !important;
+  font-size: 14px !important;
+  width: 80px;
+  @include display-flex-important;
+  align-items: center !important;
+  justify-content: center !important;
+  &:hover {
+    color: #ffffff !important;
+  }
+  &__yellow {
+    background-color: #ffbe59 !important;
+  }
+  &__red {
+    background: linear-gradient(0deg, #c72114 8.33%, #f5493a 92.5%) !important;
+  }
+  &-logout {
+    text-align: center;
+    margin: 20px auto 8px;
+    color: #aeb9c7;
+    padding: 10px;
+    width: 220px;
+    background: #f8f8f8;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+
+.menu {
+  &-item {
+    padding: 0.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    @include display-flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  &-label {
+    @include display-flex;
+    align-items: center;
+  }
+}
+.version {
+  color: #aeb9c7;
+  text-align: center;
+  font-size: 0.875rem;
+}

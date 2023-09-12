@@ -1,0 +1,113 @@
+@import '../assets/styles/helpers/variables';
+
+.background {
+  &-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.btn {
+  &-main {
+    background: #36ffb5 !important;
+    color: #1d1d42 !important;
+    border-radius: 8px !important;
+    padding: 8px 16px !important;
+    height: 40px !important;
+    line-height: 24px !important;
+
+    font-weight: 550;
+    //font-size: 16px;
+
+    // &:hover {
+    //   background: $main-color !important;
+    //   opacity: .8 !important;
+    // }
+  }
+
+  &-red {
+    background: #f5493a !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    padding: 6px !important;
+    height: 32px !important;
+    line-height: 1 !important;
+    font-size: 14px;
+    font-weight: 700;
+
+    // &:hover {
+    //   background: #F5493A !important;
+    //   opacity: .8 !important;
+    // }
+  }
+
+  &-outline {
+    &-main {
+      background: #fff !important;
+      color: $main-color !important;
+      border-radius: 8px !important;
+      border: 1px solid $main-color;
+      padding: 6px !important;
+      height: 32px !important;
+      line-height: 1 !important;
+      font-size: 14px;
+      font-weight: 700;
+
+      // &:hover {
+      //   background: #fff !important;
+      //   opacity: .8 !important;
+      // }
+    }
+  }
+}
+
+.container {
+  &-input {
+    position: relative;
+
+    .input {
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      text-align: left;
+      height: 48px;
+      background: #26264e;
+      color: #ffffff;
+
+      &:hover,
+      &:focus {
+        outline: none;
+        box-shadow: none;
+        background: none;
+      }
+
+      &::placeholder {
+        color: #aeb9c7;
+        opacity: 1;
+        /* Firefox */
+      }
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    }
+  }
+}
+
+.w-0 {
+  width: 0 !important;
+}
+
+.ant-form-item-explain-error {
+  padding: 5px 0;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

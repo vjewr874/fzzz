@@ -1,0 +1,219 @@
+@import '../../../assets/styles/helpers/variables';
+
+#buy-lottery {
+  .filter {
+    padding: 4px 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    .title {
+      font-weight: 700;
+      font-size: 0.875rem;
+    }
+    .content {
+      font-weight: 500;
+      color: #e1584c;
+    }
+  }
+  .type-view-lottery {
+    padding: 12px 8px 0;
+    display: flex;
+    justify-content: space-between;
+    .title {
+      font-weight: 700;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+    &-switch {
+      height: 19px !important;
+      max-width: 36px !important;
+      .ant-switch-handle {
+        height: 16px !important;
+        width: 16px !important;
+      }
+    }
+  }
+  .container {
+    &-wallet {
+      @include display-flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 8px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+
+      .wallet {
+        &-amount {
+          @include display-flex;
+          align-items: center;
+          .img {
+            &-wallet {
+              width: 20px;
+              height: 20px;
+              margin-right: 8px;
+            }
+            &-reload {
+              width: 16px;
+              height: 16px;
+              margin-left: 6px;
+              cursor: pointer;
+              &.active {
+                -webkit-animation-name: reload;
+                -webkit-animation-duration: 2s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-fill-mode: forwards;
+                animation-name: reload;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-fill-mode: forwards;
+                -moz-animation-name: reload;
+                -moz-animation-duration: 2s;
+                -moz-animation-iteration-count: infinite;
+                -moz-animation-fill-mode: forwards;
+              }
+            }
+          }
+          .amount {
+            color: #092249;
+            font-weight: 700;
+            font-size: 1.125rem;
+          }
+        }
+      }
+      .btn {
+        &-wallet {
+          background: linear-gradient(0deg, #c72114 8.33%, #f5493a 92.5%);
+          @include display-flex;
+          align-items: center;
+          padding: 7px;
+          font-size: 0.875rem;
+          border-radius: 8px;
+          color: #fff;
+          cursor: pointer;
+          .icon-search {
+            width: 12px;
+            height: 12px;
+            margin-right: 2px;
+          }
+        }
+      }
+    }
+    &-lotteries {
+      padding: 12px 8px 20px;
+    }
+    &-select {
+      @include display-flex;
+      align-items: center;
+      margin: 0 -6px;
+      .select {
+        width: 50%;
+        padding: 0 6px;
+        .ant-select {
+          width: 100%;
+          &-selector {
+            border-color: #9eaabb;
+          }
+        }
+        .date-time {
+          width: 100%;
+          border-color: #9eaabb;
+          height: 32px;
+        }
+      }
+    }
+    &-tab {
+      padding-top: 24px;
+      padding-bottom: 85px;
+      .ant {
+        &-tabs {
+          &-nav {
+            &-list {
+              width: 100%;
+              justify-content: space-between;
+            }
+          }
+          &-tab {
+            justify-content: center;
+            width: 33.333%;
+            font-weight: 700;
+            color: #aeb9c7;
+            padding-top: 0;
+            &-active {
+              color: $main-color;
+            }
+          }
+        }
+      }
+    }
+    &-order-lottery {
+      position: fixed;
+      background-color: #ffffff;
+      padding: 12px 8px;
+      max-width: 384px;
+      width: 100%;
+      left: 50%;
+      bottom: -100%;
+      transform: translateX(-50%);
+      border-top: 1px solid #e6e6e6;
+      box-shadow: 0px -6px 12px rgba(0, 0, 0, 0.08);
+      transition: 0.3s;
+      visibility: hidden;
+      @media #{$media-ipad} {
+        max-width: 100%;
+      }
+      &.show {
+        bottom: 0;
+        visibility: visible;
+      }
+      .btn {
+        &-buy {
+          margin: 0 !important;
+          .icon-shopping {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+    &-amount {
+      @include display-flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 10px;
+      .title {
+        color: rgba(6, 23, 49, 0.75);
+        font-size: 0.875rem;
+        font-weight: 700;
+      }
+      .amount {
+        color: #f5493a;
+        font-size: 1rem;
+        font-weight: 800;
+      }
+    }
+  }
+}
+@-webkit-keyframes reload {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes reload {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes reload {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}

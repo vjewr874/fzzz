@@ -1,0 +1,55 @@
+.overview {
+  &__guide {
+    background: #eeeeee;
+    padding: 8px 12px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #222222;
+  }
+  &__card {
+    background: #ffffff;
+    border: 1px solid #c72114;
+    border-radius: 8px;
+    padding: 8px 15px;
+    min-height: 125px;
+  }
+  &__tile {
+    color: #222222;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+  }
+  &__number {
+    color: #c72114;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 16px;
+    margin-top: 6px;
+    text-align: center;
+  }
+  &__des {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    margin-top: 4px;
+    &__number {
+      color: #c72114;
+    }
+    &__second {
+      text-align: center;
+    }
+  }
+  &__qr {
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__table {
+    margin-top: 16px;
+  }
+}

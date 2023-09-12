@@ -1,0 +1,73 @@
+@import '../../../assets/styles/helpers/variables';
+
+#wallet-amount {
+  &.wallet {
+    &-amount {
+      @include display-flex;
+      align-items: center;
+      .img {
+        &-wallet {
+          width: 20px;
+          height: 20px;
+          margin-right: 8px;
+        }
+        &-reload {
+          width: 16px;
+          height: 16px;
+          margin-left: 6px;
+          cursor: pointer;
+          &.active {
+            -webkit-animation-name: reload;
+            -webkit-animation-duration: 2s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-fill-mode: forwards;
+            animation-name: reload;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            -moz-animation-name: reload;
+            -moz-animation-duration: 2s;
+            -moz-animation-iteration-count: infinite;
+            -moz-animation-fill-mode: forwards;
+          }
+        }
+      }
+      .amount {
+        color: #092249;
+        font-weight: 700;
+        font-size: 1.125rem;
+      }
+      .title {
+        font-weight: 700;
+        font-size: 0.875rem;
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+@-webkit-keyframes reload {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes reload {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes reload {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}

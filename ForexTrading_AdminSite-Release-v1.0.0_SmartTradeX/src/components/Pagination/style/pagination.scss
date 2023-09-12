@@ -1,0 +1,40 @@
+#pagination {
+  margin-top: 10px;
+  .description-desktop {
+    @media (max-width: 769px) {
+      display: none !important;
+    }
+  }
+
+  .react-paginate {
+    @media (max-width: 769px) {
+      max-width: 100%;
+      overflow-x: auto;
+      justify-content: flex-start !important;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    .page-item{
+      .page-link{
+        background-color: transparent;
+        color: #BCBCBC;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 19px;
+      }
+      &:first-child,&:last-child{
+        border-radius: 50%;
+        border: 1px solid #BCBCBC;
+        width: 37px;
+        height: 37px;
+      }
+    }
+    .active{
+      background-color: transparent;
+      .page-link{
+        color: #A185E1!important;
+      }
+    }
+  }
+}

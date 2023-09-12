@@ -1,0 +1,27 @@
+body {
+  background-color: #1d1d42;
+}
+
+#root {
+  max-width: 384px;
+  margin: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+  position: relative;
+  /* font-family: "Barlow"; */
+}
+
+#root::-webkit-scrollbar {
+  display: none;
+}
+
+iframe {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #root {
+    max-width: 100% !important;
+  }
+}

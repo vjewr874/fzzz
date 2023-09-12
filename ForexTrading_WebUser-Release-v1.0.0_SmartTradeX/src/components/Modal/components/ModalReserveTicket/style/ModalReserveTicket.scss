@@ -1,0 +1,181 @@
+@import '../../../../../assets/styles/helpers/variables';
+
+#ModalReserveTicket {
+  background-color: $main-background-color;
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+
+  .ModalReserveTicket {
+    &-header {
+      padding: 0 16px;
+      background-color: $main-background-light;
+      height: 52px;
+      @include display-flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .left,
+      .right {
+        width: 24px;
+        height: 24px;
+      }
+
+      img {
+        cursor: pointer;
+      }
+    }
+
+    &-content {
+      .basicColor {
+        color: $color_primary;
+      }
+      .warnColor {
+        color: $color_primary_warn_light;
+      }
+      .yourChoose {
+        background-color: $color_background_dark;
+        text-align: center;
+        padding: 20px;
+
+        .action {
+          font-weight: 400;
+          font-size: 0.913rem;
+          line-height: 1.25rem;
+          color: $color_text_primary;
+          display: block;
+          margin-bottom: 8px;
+        }
+
+        .choose {
+          font-weight: 700;
+          font-size: 1.25rem;
+          line-height: 1.5rem;
+          letter-spacing: 0.02em;
+          display: block;
+        }
+      }
+
+      .enterMoney {
+        padding: 0 20px;
+        background-color: $color_background;
+
+        .countDown {
+          padding: 12px 0;
+          @include display-flex;
+          justify-content: space-between;
+
+          .number {
+            @include display-flex;
+            align-items: center;
+
+            img {
+              width: 20px;
+              height: 20px;
+              margin-right: 4px;
+            }
+
+            span {
+              font-weight: 500;
+              font-size: 0.813rem;
+              line-height: 1.25rem;
+              color: $color_primary_warn;
+            }
+          }
+
+          .period {
+            font-weight: 400;
+            font-size: 0.938rem;
+            line-height: 1.25rem;
+            color: $color_text_primary_light;
+          }
+        }
+
+        .enterAmount {
+          .input {
+            background-color: $color_background_light;
+            border-color: $color-border_primary;
+            color: $color_text_primary;
+            text-align: center;
+            min-height: 48px;
+            width: 100%;
+            &::placeholder {
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 24px;
+              color: $color_text_primary_very_light;
+              text-align: center;
+            }
+            input {
+              height: 48px;
+              width: 100%;
+              text-align: center;
+            }
+          }
+        }
+
+        .autoChange {
+          padding: 12px 0 24px;
+          border-bottom: 1px solid $color_border_primary;
+          @include display-flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          &-item {
+            padding: 4px 8px;
+            margin-bottom: 8px;
+            margin-right: 8px;
+            background-color: $color_border_primary;
+            font-weight: 400;
+            font-size: 0.75rem;
+            line-height: 1.25rem;
+            letter-spacing: -0.02em;
+            color: $color_text_primary;
+            border-radius: 6px;
+            cursor: pointer;
+          }
+        }
+
+        .btnReserveTicket {
+          padding: 8px 0 20px;
+          .balance {
+            display: block;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 20px;
+            color: $color_secondary;
+            margin-bottom: 16px;
+          }
+          .groupBtn {
+            @include display-flex;
+            justify-content: space-between;
+            .btnCancel,
+            .btnSubmit {
+              font-weight: 600;
+              font-size: 1rem;
+              line-height: 1.5rem;
+              width: calc(36% - 5px);
+              color: $color_text_primary;
+              padding: 12px;
+              background-color: $color_background_light;
+              border-radius: 8px;
+              border: 1px solid $color_background_light;
+              display: inline-block;
+              text-align: center;
+              cursor: pointer;
+            }
+            .btnSubmit {
+              background-color: $color_primary;
+              border: 1px solid $color_background_light;
+              width: calc(64% - 5px);
+              color: $color_background;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal-container {
+  width: 90%;
+}

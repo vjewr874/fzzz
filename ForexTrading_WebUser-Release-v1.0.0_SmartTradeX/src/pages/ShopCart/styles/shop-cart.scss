@@ -1,0 +1,107 @@
+@import '../../../assets/styles/helpers/variables';
+#shop-cart {
+  .container {
+    &-shop-cart {
+      padding: 20px 8px 100px;
+    }
+    &-order-lottery {
+      position: fixed;
+      background-color: #ffffff;
+      padding: 12px 8px;
+      max-width: 384px;
+      width: 100%;
+      left: 50%;
+      bottom: -100%;
+      transform: translateX(-50%);
+      border-top: 1px solid #e6e6e6;
+      box-shadow: 0px -6px 12px rgba(0, 0, 0, 0.08);
+      transition: 0.3s;
+      visibility: hidden;
+      @media #{$media-ipad} {
+        max-width: 100%;
+      }
+      &.show {
+        bottom: 0;
+        visibility: visible;
+      }
+      .btn {
+        &-buy {
+          margin: 0;
+          .icon-shopping {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+    &-amount {
+      @include display-flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 10px;
+      .title {
+        color: rgba(6, 23, 49, 0.75);
+        font-size: 0.75rem;
+        font-weight: 700;
+      }
+      .amount {
+        color: #f5493a;
+        font-size: 1rem;
+        font-weight: 800;
+      }
+    }
+    &-btn {
+      @include display-flex;
+      justify-content: space-between;
+      .btn {
+        &-main {
+          width: 50%;
+          font-size: 0.874rem;
+        }
+        &-choose {
+          margin-left: 0;
+          margin-right: 6px;
+          background-color: #f5493a !important;
+        }
+        &-buy {
+          margin-left: 6px;
+        }
+      }
+      &__modal {
+        @include display-flex;
+        justify-content: flex-end;
+        .btn {
+          &-cancel {
+            background: #ffffff !important;
+            color: #000 !important;
+            border-radius: 8px !important;
+            padding: 10px !important;
+            height: 40px !important;
+            line-height: 1 !important;
+            font-size: 12px;
+            font-weight: 700;
+            border: 1px solid;
+            transition: 0.3s;
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+    }
+    &-notification {
+      padding: 20px;
+      .title {
+        font-size: 1rem;
+        font-weight: 700;
+        border-bottom: 1px solid;
+        padding-bottom: 10px;
+      }
+      .content {
+        text-align: center;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}

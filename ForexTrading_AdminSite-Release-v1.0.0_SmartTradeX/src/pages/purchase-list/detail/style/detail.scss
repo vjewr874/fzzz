@@ -1,0 +1,43 @@
+#DetailPurchaseList,#DetailSMS{
+  .detail-title{
+    font-style: normal!important;
+    font-weight: 400!important;
+    font-size: 20px!important;
+    line-height: 23px!important;
+    color: black;
+  }
+  .detail-input{
+    label{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+      margin-bottom: 8px;
+    }
+    .form-group{
+      margin-bottom: 35px;
+    }
+  }
+  button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+  }
+
+  .image-detail-order{
+    border: 1px solid #999999;
+    border-radius: 5px;
+    .image{
+      padding-top: 48.36363636363636%;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+}
+
+

@@ -1,0 +1,39 @@
+/* Copyright (c) 2022 Toriti Tech Team https://t.me/ToritiTech */
+
+import Request from './request';
+
+export default class PaymentExchangeService {
+  static async getList(data = {}) {
+    return new Promise(resolve => {
+      Request.send({
+        method: 'POST',
+        path: 'PaymentExchangeTransaction/user/getList',
+        data,
+      }).then((result = {}) => {
+        const { statusCode, data, message } = result;
+        if (statusCode === 200) {
+          return resolve({ isSuccess: true, data });
+        } else {
+          return resolve({ isSuccess: false, message });
+        }
+      });
+    });
+  }
+
+  static async getDetail(data = {}) {
+    return new Promise(resolve => {
+      Request.send({
+        method: 'POST',
+        path: 'PaymentExchangeTransaction/user/findById',
+        data,
+      }).then((result = {}) => {
+        const { statusCode, data, message } = result;
+        if (statusCode === 200) {
+          return resolve({ isSuccess: true, data });
+        } else {
+          return resolve({ isSuccess: false, message });
+        }
+      });
+    });
+  }
+}

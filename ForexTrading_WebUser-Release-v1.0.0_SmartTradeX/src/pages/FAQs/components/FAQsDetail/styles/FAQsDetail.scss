@@ -1,0 +1,43 @@
+@import './src/assets/styles/helpers/variables';
+#FAQsDetail {
+  .FAQs-detail {
+    padding: 4px 0 0 0;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: $black-text-color;
+    .show {
+      max-height: 5000px;
+      visibility: unset;
+      transition: ease-in 0.5s;
+    }
+    .active {
+      background-color: #f8f8f8;
+      .icon {
+        transform: rotate(270deg);
+      }
+    }
+    &-item {
+      &-title {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+        padding: 16px 8px;
+        border: 1px solid rgba(174, 185, 199, 0.2);
+        .icon {
+          width: 16px;
+          height: 16px;
+          transform: rotate(90deg);
+          margin-left: 4px;
+        }
+      }
+      &-content {
+        max-height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        p {
+          padding: 16px 8px;
+        }
+      }
+    }
+  }
+}

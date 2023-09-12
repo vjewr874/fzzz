@@ -1,0 +1,36 @@
+
+
+.filter-container {
+  &>div.mb-1 {
+      .input-group {
+          .input-group-prepend {
+              &>button {
+                  border-radius: 0 5px 5px 0;
+              }
+          }
+      }
+  }
+  div.mb-1:nth-child(2) {
+      .input-group {
+        &:not(.bootstrap-touchspin):focus-within {
+            box-shadow: none;
+        }
+      }
+			.input-group-prepend {
+                width: 100%;
+				button {
+					border-radius: 5px !important;
+				}
+			}
+  }
+
+  @media(max-width: 768px) {
+		div.mb-1:nth-child(2) {
+      .input-group {
+        .input-group-prepend {
+					width: 100%;
+				}    
+      }
+  	}
+	}
+}

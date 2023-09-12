@@ -1,0 +1,50 @@
+.factory {
+  &__pagination {
+    .ant-pagination-prev,
+    .ant-pagination-next {
+      border: 1px solid rgba(0, 0, 0, 0.25);
+      border-radius: 2px;
+      svg {
+        fill: rgba(0, 0, 0, 0.25);
+      }
+      &:hover,
+      &:focus,
+      &:active,
+      &:visited,
+      &:target {
+        background: #c72114;
+        border-radius: 2px;
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  &__up-arrow {
+    transform: rotate(180deg) !important;
+  }
+}
+.bg-fac {
+  background-image: url('/assets/images/bg-fac.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.bg-btc {
+  background-image: url('/assets/images/bg-btc.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.management {
+  .ant-collapse,
+  .ant-collapse-content,
+  .ant-pagination-simple .ant-pagination-simple-pager input {
+    background-color: unset !important;
+  }
+  .ant-pagination-slash {
+    margin: 0 10px 0 10px !important;
+  }
+}

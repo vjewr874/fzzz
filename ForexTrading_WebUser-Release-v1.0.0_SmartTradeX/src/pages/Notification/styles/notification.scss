@@ -1,0 +1,57 @@
+@import '../../../assets/styles/helpers/variables';
+#notification {
+  .notification {
+    .isReadNotification {
+      background-color: rgba(255, 255, 255, 0.04);
+    }
+    padding-top: 20px;
+    &-item {
+      min-height: 84px;
+      padding: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      &-date {
+        font-weight: 500;
+        font-size: 0.813rem;
+        line-height: 0.938rem;
+        color: #ffcd08;
+        margin-bottom: 4px;
+      }
+      &-content {
+        @include display-flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .content {
+          font-weight: 500;
+          font-size: 0.938rem;
+          line-height: 1.25rem;
+          color: #ffffff;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: calc(100% - 66px);
+        }
+      }
+    }
+    .custom-pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 28px;
+    }
+    .ant-pagination-item-link,
+    .ant-pagination-item {
+      background: $main-background-color;
+      color: white;
+      .anticon {
+        color: white;
+      }
+    }
+    .ant-pagination-item-active {
+      color: $main-background-color;
+      background: $main-color;
+    }
+    .ant-pagination-item-ellipsis {
+      color: white;
+    }
+  }
+}

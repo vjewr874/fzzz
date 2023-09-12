@@ -1,0 +1,38 @@
+@import '../../../assets/styles/helpers/variables';
+
+.container {
+  &-pagination {
+    @include display-flex;
+    justify-content: center;
+    align-items: center;
+    .btn {
+      &-pagination {
+        width: 32px;
+        height: 32px;
+        @include display-flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid transparent;
+        border-radius: 2px;
+        background: #0073ff;
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 1.25rem;
+        line-height: 1;
+        &.disabled {
+          border: 1px solid #acacac;
+          color: #acacac;
+          background-color: transparent;
+        }
+      }
+    }
+    .pagination {
+      &-number {
+        color: white;
+        letter-spacing: 2px;
+        font-size: 0.875rem;
+        padding: 0 12px;
+      }
+    }
+  }
+}

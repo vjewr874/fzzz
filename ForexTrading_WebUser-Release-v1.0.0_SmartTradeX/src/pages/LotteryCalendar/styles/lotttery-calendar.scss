@@ -1,0 +1,43 @@
+@import '../../../../src/assets/styles/helpers/variables';
+#next-schedule {
+  padding: 0 8px;
+  .container {
+    margin-top: 20px;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    padding: 0 6px;
+  }
+  .title {
+    background: #fff5dc;
+  }
+  .column-1 {
+    padding: 8px;
+  }
+  .column-2 {
+    text-align: center;
+    padding: 4px;
+    span {
+      font-weight: initial;
+    }
+  }
+  .time {
+    color: red;
+  }
+  th {
+    padding: 10px 8px;
+    border: solid 1px #dddfe2;
+  }
+  .day {
+    color: red;
+    width: 70px;
+    padding: 10px 8px;
+  }
+  .local {
+    font-weight: initial;
+    text-align: center;
+    color: #092249;
+    padding: 8px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}

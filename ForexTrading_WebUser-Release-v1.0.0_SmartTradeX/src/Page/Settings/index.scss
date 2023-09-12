@@ -1,0 +1,85 @@
+.setting {
+  // background-image: url('/assets/images/login_bg.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+  .px-20 {
+    padding: 0 20px;
+  }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    padding-top: 50px;
+    padding-bottom: 14px;
+    svg {
+      width: 24px;
+      cursor: pointer;
+      height: 24px;
+      color: #fff;
+      fill: #fff;
+    }
+
+    .route-name {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+    div:last-child {
+      width: 24px;
+    }
+  }
+
+  &-content {
+    background-color: #fff;
+    padding-top: 40px;
+    padding-bottom: 88px;
+
+    .anticon.anticon-global {
+      color: #047b73;
+      svg {
+        width: 24px;
+        height: 24px;
+        margin-right: 16px;
+      }
+    }
+
+    .divide {
+      color: rgba(0, 0, 0, 0.06);
+      height: 2px;
+    }
+
+    .ant-input-affix-wrapper.ant-input-password {
+      border: 2px solid #047b73;
+    }
+  }
+
+  .update-pass {
+    &-header {
+      background-color: #f7f7f7;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 16px;
+      }
+    }
+  }
+
+  svg {
+    color: #047b73;
+  }
+
+  button {
+    background-color: #047b73;
+  }
+}

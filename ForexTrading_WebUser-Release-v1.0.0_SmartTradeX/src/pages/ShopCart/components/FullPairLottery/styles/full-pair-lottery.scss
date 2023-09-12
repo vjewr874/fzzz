@@ -1,0 +1,116 @@
+@import '../../../../../assets/styles/helpers/variables';
+
+#full-pair-lottery {
+  .container {
+    &-normal-lottery {
+      background: #ffffff;
+      padding: 8px 0 12px;
+      border: 1px solid rgba(174, 185, 199, 0.2);
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
+      border-radius: 8px;
+    }
+    &-lottery {
+      &__by-province {
+        padding: 12px;
+        border-bottom: 1px solid rgba(174, 185, 199, 0.2);
+      }
+    }
+    &-total-price {
+      @include display-flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 12px 0;
+      .amount {
+        font-weight: 800;
+        font-size: 1rem;
+        color: #acacac;
+        span {
+          color: #f5493a;
+        }
+      }
+    }
+  }
+  .normal-lottery {
+    &__header {
+      @include display-flex;
+      align-items: center;
+      padding: 0 12px 8px;
+      border-bottom: 1px solid rgba(174, 185, 199, 0.2);
+      .icon {
+        &__logo {
+          width: 36px;
+          height: 44px;
+          margin-right: 12px;
+        }
+      }
+      .title {
+        text-transform: uppercase;
+        font-size: 0.875rem;
+        font-weight: 700;
+        color: #092249;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .icon {
+    &__trash {
+      cursor: pointer;
+      width: 16px;
+      min-width: 16px;
+      height: 16px;
+    }
+    &__remove {
+      cursor: pointer;
+      width: 16px;
+      min-width: 16px;
+      height: 16px;
+      margin-left: 4px;
+    }
+  }
+  .lottery {
+    &__by {
+      &-province {
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &__title {
+      font-weight: 700;
+      font-size: 0.875rem;
+      color: $main-color;
+      margin-bottom: 12px;
+    }
+    &__detail {
+      @include display-flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &__number,
+    &__quantity {
+      font-weight: 600;
+      font-size: 0.875rem;
+    }
+    &__number {
+      color: #092249;
+      min-width: 92px;
+    }
+    &__quantity {
+      color: #e1584c;
+      width: 100%;
+    }
+  }
+  .btn {
+    &-remove {
+      @include display-flex;
+      align-items: center;
+      font-weight: 700;
+      font-size: 0.875rem;
+      color: #092249;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@import '../../assets/styles/helpers/variables';
+#commission-payment {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 8px 16px 8px;
+    align-items: center;
+    .right {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      text-decoration-line: underline;
+      color: #0073ff;
+      cursor: pointer;
+    }
+    &-withdraw {
+      &__wallet {
+        padding: 20px 8px;
+      }
+      &__payment {
+        background-color: #fff;
+        padding: 12px 8px;
+        margin-bottom: 16px;
+        .payment {
+          @include display-flex;
+          align-items: center;
+          cursor: pointer;
+          &__title {
+            color: #061731bf;
+            font-weight: 700;
+            font-size: 0.875rem;
+            margin-bottom: 20px;
+          }
+          &__icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+          }
+          &__content {
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: #092249;
+          }
+        }
+      }
+      &__price {
+        background-color: #fff;
+        padding: 15px 8px;
+        margin-bottom: 16px;
+        .price {
+          &__title {
+            color: #061731bf;
+            font-weight: 700;
+            font-size: 0.875rem;
+            margin-bottom: 12px;
+          }
+          &__note {
+            color: #061731bf;
+            font-size: 0.875rem;
+            margin-top: 6px;
+          }
+        }
+      }
+    }
+    &-input {
+      margin-bottom: 12px;
+    }
+    &-btn {
+      padding: 12px 8px;
+    }
+  }
+  .btn {
+    &-note {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 0.875rem;
+      color: #c82215;
+    }
+  }
+}

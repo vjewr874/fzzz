@@ -1,0 +1,93 @@
+$media-tablet-horizontal: 'only screen and (max-width : 1160px)';
+$media-tablet-vertical: 'only screen and (max-width : 900px)';
+$media-ipad: 'only screen and (max-width : 769px)';
+$media-small-phone: 'only screen and (max-width : 320px)';
+$media-small-fold: 'only screen and (max-width : 281px)';
+
+$main-color: #36ffb5;
+$main-light-color: #70b3f9;
+$text-color: #333333;
+$dark-main-color: #19463d;
+$light-main-color: #005e4b;
+$background-linear-main: linear-gradient(270deg, #0073ff 0%, #0073ff 13.02%, #141ed2 100%);
+
+$black-text-color: #092249;
+$header-color: #fff;
+
+@mixin display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin display-flex-important {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: -moz-box !important;
+  display: -moz-flex !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+}
+$main-background-color: #1d1d42;
+$main-background-light: #26264e;
+$main-background-dark: #151530;
+
+// new Set Theme
+$COLOR_PRIMARY: #36ffb5;
+$COLOR_PRIMARY_WARNING: #ec4f4f;
+$COLOR_PRIMARY_WARNING_LIGHT: #ff715e;
+$COLOR_BACKGROUND: #1d1d42;
+$COLOR_BACKGROUND_LIGHT: #26264e;
+$COLOR_TEXT_PRIMARY: #ffffff;
+$COLOR_TEXT_PRIMARY_LIGHT: rgba(255, 255, 255, 0.75);
+$COLOR_TEXT_PRIMARY_VERY_LIGHT: rgba(255, 255, 255, 0.5);
+
+//color
+$COLOR_TEXT_WHITE_LIGHT: rgba(255, 255, 255, 0.75);
+$COLOR_TEXT_WHITE_VERY_LIGHT: rgba(255, 255, 255, 0.5);
+$COLOR_TEXT_WHITE_BACKGROUND: rgba(255, 255, 255, 0.1);
+$COLOR_WHITE: #ffffff;
+$COLOR_TEXT_RED_PRIMARY: #ec4f4f;
+$COLOR_TEXT_RED_LIGHT: #ff715e;
+$COLOR_RED_PRIMARY: #ec4f4f;
+$COLOR_RED_LIGHT: #ff715e;
+$COLOR_YELLOW_PRIMARY: #ffcd08;
+$COLOR_YELLOW_SECONDARY: rgba(255, 205, 8, 0.1);
+$COLOR_YELLOW_BACKGROUND: rgba(255, 205, 8, 0.1);
+
+//
+$color_primary: #36ffb5;
+$color_primary_warn: #ec4f4f;
+$color_primary_warn_light: #ff715e;
+$color_secondary: #ffcd08;
+$color_secondary_dark: rgba(255, 205, 8, 0.1);
+$color_background: #1d1d42;
+$color_background_light: #26264e;
+$color_background_dark: #151530;
+$color_text_primary: #ffffff;
+$color_text_primary_light: rgba(255, 255, 255, 0.75);
+$color_text_primary_very_light: rgba(255, 255, 255, 0.5);
+$color_border_primary: rgba(255, 255, 255, 0.1);
+
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  .ant-pagination-item-link,
+  .ant-pagination-item {
+    background: $main-background-color;
+    color: white;
+    .anticon {
+      color: white;
+    }
+  }
+  .ant-pagination-item-active {
+    color: $main-background-color;
+    background: $main-color;
+  }
+  .ant-pagination-item-ellipsis {
+    color: white !important;
+  }
+}

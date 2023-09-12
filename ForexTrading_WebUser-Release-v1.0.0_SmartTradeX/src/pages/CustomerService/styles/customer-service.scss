@@ -1,0 +1,27 @@
+@import '../../../assets/styles/helpers/variables';
+
+.customerService {
+  //padding: 20px;
+
+  &Text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    padding: 20px 20px 28px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  &List {
+    cursor: pointer;
+    &Item {
+      @include display-flex;
+      align-items: center;
+      padding: 20px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      img {
+        margin-right: 16px;
+      }
+    }
+  }
+}

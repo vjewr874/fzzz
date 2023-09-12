@@ -1,0 +1,39 @@
+@import '../node_modules/prismjs/themes/prism-tomorrow';
+@import './assets/scss/app.scss';
+
+.valuediv{
+  display: flex;
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+}
+
+.text-dot {
+  line-height: 1.6rem;
+  overflow: hidden;
+  display: -webkit-box; 
+  -webkit-box-orient: vertical;
+  max-height: 3.2rem;
+
+  &-1 {
+    -webkit-line-clamp: 1;
+  }
+}
+
+.display-5 {
+  font-size: 19px;
+}
+
+.gameRecordValue{
+  border:1px solid #222222;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin: 0 2px 0 0;
+
+  &:first-of-type {
+      color: #fff;
+      background-color: red;
+  }
+}

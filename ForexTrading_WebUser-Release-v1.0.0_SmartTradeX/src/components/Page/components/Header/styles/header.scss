@@ -1,0 +1,123 @@
+@import '../../../../../assets/styles/helpers/variables';
+
+.container {
+  &-header {
+    @include display-flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1d1d42;
+    position: fixed;
+    width: 100%;
+    max-width: 384px;
+    padding: 12px 8px;
+    height: 48px;
+    z-index: 99;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    @media #{$media-ipad} {
+      max-width: 100vw;
+    }
+  }
+
+  &-item {
+    &__center {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      color: #ffffff;
+    }
+  }
+
+  &-menu-toggle {
+    width: 16px;
+    height: 14px;
+    @include display-flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+
+    .bar {
+      height: 2px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      margin-top: 4px;
+      transition: 0.3s ease;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &--top {
+        width: 16px;
+      }
+
+      &--middle {
+        width: 10px;
+      }
+
+      &--bottom {
+        width: 16px;
+      }
+    }
+
+    .topBar {
+      width: 12px;
+    }
+
+    .middleBar {
+      width: 12px;
+    }
+
+    .bottomBar {
+      width: 24px;
+    }
+  }
+
+  &-icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background-size: contain !important;
+    cursor: pointer;
+
+    .notification {
+      position: absolute;
+      background-color: #ffbe59;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      padding-bottom: 0;
+      right: 0;
+      top: -2px;
+      opacity: 0;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+
+    .shop-cart {
+      position: absolute;
+      background-color: #ffbe59;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      padding-bottom: 0;
+      right: -2px;
+      top: 0;
+      opacity: 0;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.icon {
+  &-back {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+}

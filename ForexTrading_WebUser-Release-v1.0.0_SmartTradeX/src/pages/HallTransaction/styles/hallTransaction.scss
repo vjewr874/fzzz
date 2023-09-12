@@ -1,0 +1,137 @@
+@import '../../../assets/styles/helpers/variables';
+#HallTransaction {
+  .hallTransaction {
+    margin-bottom: 86px;
+    &-header {
+      background-color: $main-background-color;
+      height: 48px;
+      position: fixed !important;
+      top: 0;
+      left: 0;
+      right: 0;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      z-index: 99;
+      width: 100%;
+      max-width: 384px;
+      margin: auto;
+      @media (max-width: 768px) {
+        &__navbar {
+          max-width: 100%;
+        }
+      }
+      &-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+      }
+    }
+
+    &-contain {
+      padding: 20px 20px 0;
+      margin-top: 48px;
+      &-purchase {
+        @include display-flex;
+        justify-content: space-between;
+        .purchase-item {
+          width: calc(50% - 4px);
+          padding: 8px 12px;
+          cursor: pointer;
+          border: 2px solid rgba(255, 255, 255, 0.1);
+          border-radius: 8px;
+          .img {
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+          }
+          .title {
+            font-weight: 500;
+            font-size: 0.938rem;
+            line-height: 1.25rem;
+          }
+        }
+      }
+
+      &-viewUserSale {
+        margin: 24px 0;
+        background: #26264e;
+        border-radius: 14px;
+        padding: 0 8px;
+        .viewUserSale-item {
+          width: 100%;
+          padding: 12px 0;
+          height: 50px;
+          @include display-flex-important;
+          align-items: center;
+          .img {
+            width: 26px;
+            min-width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 8px;
+          }
+          .content {
+            font-weight: 500;
+            font-size: 0.815rem;
+            line-height: 1.25rem;
+            color: rgba(255, 255, 255, 0.75);
+          }
+        }
+      }
+
+      &-transaction {
+        .ant-tabs-nav-more {
+          display: none;
+        }
+        .ant-tabs-tab {
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 1.25rem;
+          color: rgba(255, 255, 255, 0.5);
+          width: 50%;
+          text-align: center;
+          margin: 0;
+        }
+        .ant-tabs-nav-list,
+        .ant-tabs-tab-btn {
+          width: 100%;
+        }
+        .ant-tabs-tab-active {
+          border-bottom: 3px solid #ffcd08;
+          .ant-tabs-tab-btn {
+            color: #ffcd08 !important;
+          }
+        }
+        .ant-tabs-ink-bar {
+          background: #ffcd08;
+        }
+      }
+    }
+
+    .custom-pagination {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 16px;
+      .ant-pagination-item-link,
+      .ant-pagination-item {
+        background: $main-background-color;
+        color: white;
+        .anticon {
+          color: white;
+        }
+      }
+      .ant-pagination-item-active {
+        color: $main-background-color;
+        background: $main-color;
+      }
+      .ant-pagination-item-ellipsis {
+        color: white;
+      }
+    }
+  }
+}

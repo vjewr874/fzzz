@@ -1,0 +1,83 @@
+@import '../../../../../assets/styles/helpers/variables';
+.container {
+  &-otp {
+    background-color: #ffffff;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: -48px;
+    overflow: hidden;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    visibility: hidden;
+    z-index: 9999;
+    min-height: calc(100% + 48px);
+    @media #{$media-ipad} {
+      right: -100%;
+    }
+    &.show {
+      visibility: visible;
+      opacity: 1;
+      @media #{$media-ipad} {
+        right: 0;
+      }
+    }
+    &__detail {
+      width: 100%;
+      background-color: #ffffff;
+      height: 100%;
+      padding-top: 48px;
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+  &-detail {
+    padding: 20px 8px;
+    text-align: center;
+    .content {
+      font-size: 0.875rem;
+      margin-bottom: 16px;
+    }
+    .time {
+      font-size: 0.813rem;
+      margin-bottom: 8px;
+      span {
+        color: #f5493a;
+        font-weight: 700;
+      }
+    }
+    .opt-content {
+      margin-top: 20px;
+      font-size: 0.875rem;
+      span {
+        color: $main-color;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+    .line {
+      background-color: rgba(0, 0, 0, 0.06);
+      height: 1px;
+      width: 80px;
+      margin: 12px auto;
+    }
+    .contact {
+      font-size: 0.875rem;
+    }
+  }
+}
+#new-password {
+  padding: 60px 8px 20px;
+  .ic-show-password {
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    right: 8px;
+    cursor: pointer;
+  }
+  .btn-new-password {
+    margin-top: 28px;
+  }
+}

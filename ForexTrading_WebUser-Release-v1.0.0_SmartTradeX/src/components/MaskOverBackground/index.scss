@@ -1,0 +1,19 @@
+.maskOverBackground {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__item {
+    font-size: 150px;
+    background-color: #f5493a;
+    color: #fff;
+    padding: 20px;
+    font-weight: 700;
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,186 @@
+@import '../../../assets/styles/helpers/variables';
+#result-lottery {
+  position: relative;
+  padding-bottom: 70px;
+  .result {
+    table {
+      text-align: center;
+      width: 100%;
+    }
+    &-date {
+      display: flex;
+      justify-content: space-between;
+      background: #fff5dc;
+      border-top: 1px solid #c82215;
+      border-bottom: 1px solid #c82215;
+      padding: 8px;
+      margin-bottom: 12px;
+      &-text {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        color: #c82215;
+      }
+    }
+    &-header {
+      padding: 12px 8px 0 8px;
+      background: #f8f8f8;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: auto;
+    }
+    &-header::-webkit-scrollbar {
+      height: 12px;
+    }
+    &-footer {
+      padding: 8px;
+      background: #fff5dc;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    &-radio {
+      width: 16px;
+      height: 16px;
+    }
+    &-label {
+      padding: 0 10px 0 6px;
+      font-size: 14px;
+      line-height: 20px;
+      @media #{$media-small-phone} {
+        font-size: 8px;
+      }
+    }
+    &-left,
+    &-right {
+      display: flex;
+      align-items: center;
+    }
+    &-btn {
+      display: flex;
+      align-items: center;
+      padding: 4px 6px;
+      background: linear-gradient(0deg, #c72114 8.33%, #f5493a 92.5%);
+      border-radius: 8px;
+      margin: 0 12px;
+      &-text {
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        color: #ffffff;
+        padding-left: 2px;
+      }
+    }
+    &-loto {
+      display: flex;
+      justify-content: space-between;
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 20px;
+      background-color: #c82215;
+      padding: 8px;
+      &-text {
+        padding-right: 8px;
+      }
+    }
+    &-title {
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 16px;
+      padding: 12px 8px 8px 8px;
+    }
+    &-btnDate {
+      padding: 6px;
+      border: none;
+      border-radius: 6px;
+      margin-right: 6px;
+      font-size: 13px;
+      line-height: 16px;
+      background: #ffffff;
+      white-space: nowrap;
+    }
+    &-table1 {
+      th {
+        background: rgba(244, 179, 78, 0.5);
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+        padding: 4px;
+      }
+      tbody > tr:nth-child(even) {
+        background: #ebedf5;
+      }
+      td {
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 16px;
+        div {
+          padding: 4px;
+        }
+      }
+      .colum1 {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 4px 8px;
+        text-align: left;
+      }
+      .colum2 {
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    &-unit {
+      border-bottom: 4px solid rgba(0, 0, 0, 0.06);
+    }
+    &-table2 {
+      table-layout: fixed;
+      th {
+        background: #eeeeee;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+        padding: 4px;
+      }
+      td {
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 18px;
+        padding: 4px 2px;
+        vertical-align: top;
+        text-align: right;
+      }
+    }
+    &-table3 {
+      margin-top: 12px;
+      th {
+        background: #fdebea;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 16px;
+        padding: 4px;
+      }
+      td {
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        padding: 4px;
+      }
+      tbody > tr:nth-child(even) {
+        background: #ebedf5;
+      }
+    }
+  }
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #42c178;
+    border: 0px;
+  }
+}

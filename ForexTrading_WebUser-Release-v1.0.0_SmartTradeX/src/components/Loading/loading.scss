@@ -1,0 +1,19 @@
+#loading {
+  margin: 40px 8px;
+  .container {
+    padding: 20px 0px;
+    background: #ffffff;
+    border-radius: 12px;
+    &-img {
+      width: 304px;
+      height: 186px;
+      margin: auto;
+    }
+    &-text {
+      line-height: 20px;
+      text-align: center;
+      color: #092249;
+      padding-top: 20px;
+    }
+  }
+}

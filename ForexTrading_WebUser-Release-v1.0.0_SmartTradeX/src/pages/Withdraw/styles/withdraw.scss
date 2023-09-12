@@ -1,0 +1,159 @@
+@import '../../../assets/styles/helpers/variables';
+#withdraw {
+  .withdraw {
+    padding: 20px;
+    color: white;
+    &-infoUser {
+      .title {
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        letter-spacing: 0.02em;
+      }
+      .content {
+        margin-top: 12px;
+        padding: 4px 4px 4px 12px;
+        background-color: $main-background-light;
+        box-shadow: 0px 12px 24px rgba(20, 20, 50, 0.25);
+        border-radius: 14px;
+      }
+      .item {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 8px 0;
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+      .name {
+        font-weight: 400;
+        font-size: 0.938rem;
+        line-height: 1.25rem;
+        color: rgba(255, 255, 255, 0.75);
+        width: 37.5%;
+      }
+      .cover-input {
+        @include display-flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px 0;
+        .input {
+          width: 63%;
+          border: none;
+          margin: 0px;
+          background-color: $main-background-light;
+          background: $main-background-light;
+          color: white;
+          text-align: right;
+
+          &::placeholder {
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            color: rgba(255, 255, 255, 0.3);
+          }
+        }
+      }
+      p {
+        border: none;
+        padding: 4px;
+        text-align: right;
+        background-color: $main-background-light;
+        background: $main-background-light;
+        width: 62.5%;
+        color: white;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.25rem;
+      }
+    }
+    .container-withdraw__price {
+      margin-top: 28px;
+      .price__title {
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        letter-spacing: 0.02em;
+      }
+      .container-input {
+        padding: 20px 0;
+        margin-top: 12px;
+        background-color: $main-background-light;
+        background: $main-background-light;
+        box-shadow: 0px 12px 24px rgba(20, 20, 50, 0.25);
+        border-radius: 14px;
+        position: relative;
+        .title {
+          padding-left: 12px;
+          font-weight: 400;
+          font-size: 0.938rem;
+          line-height: 1.25rem;
+          color: rgba(255, 255, 255, 0.75);
+        }
+        .input {
+          border: none;
+          margin: 0px;
+          background-color: $main-background-light;
+          background: $main-background-light;
+          width: 100%;
+          height: auto;
+          padding: 8px 0;
+
+          &::placeholder {
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            color: rgba(255, 255, 255, 0.3);
+          }
+        }
+        .bar {
+          border: 0.5px solid rgba(255, 255, 255, 0.5);
+          width: calc(100% - 24px);
+          margin-left: 12px;
+        }
+        .getAll {
+          cursor: pointer;
+          position: absolute;
+          right: 12px;
+          top: 50%;
+          transform: translateY(calc((-50% + 12px)));
+          background: rgba(255, 205, 8, 0.08);
+          padding: 4px 8px;
+          border-radius: 16px;
+          font-weight: 500;
+          font-size: 0.813rem;
+          line-height: 1rem;
+          color: #ffcd08;
+        }
+      }
+    }
+    .container-btn {
+      // margin-top: 48px;
+      // img{
+      //   padding-left: 8px;
+      // }
+      background-color: $main-color !important;
+      background: $main-color !important;
+      width: 100%;
+      margin-top: 40px;
+      height: 40px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      button {
+        border: none;
+      }
+      span {
+        font-weight: 500 !important;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: $main-background-dark !important;
+      }
+      img {
+        width: 16px;
+        height: 16px;
+        margin-left: 8px;
+        margin-top: -4px;
+      }
+    }
+  }
+}

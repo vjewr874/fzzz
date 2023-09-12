@@ -1,0 +1,41 @@
+#change-success {
+  text-align: center;
+  padding: 20px 8px;
+  .img-sign {
+    height: 118px;
+    width: 80px;
+    margin: auto;
+  }
+  .text {
+    padding: 20px 0 28px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #092249;
+  }
+  a {
+    text-decoration: none;
+  }
+  .change-success-btn {
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-login {
+    background: #0073ff;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  .btn-home {
+    color: #0073ff;
+    border: 1px solid #0073ff;
+  }
+  img {
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,80 @@
+#render-image2 {
+  .container {
+    &-image {
+      margin-top: 15px;
+      border: 1px solid #999999;
+      border-radius: 5px;
+      padding: 15px 20px 0;
+      .image {
+        &__lottery {
+          width: 100%;
+          position: relative;
+          margin-bottom: 15px;
+          .image{
+            width: 100%;
+            padding-top: 48.36363636363636%;
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+          &:hover {
+            .image-close {
+              opacity: 1;
+            }
+          }
+        }
+      }
+      .image-close {
+        position: absolute;
+        border-radius: 50%;
+        padding: 4.5px;
+        background-color: #D9D9D9;
+        right: -10px;
+        top: -10px;
+        opacity: 0;
+        transition: .3s;
+        cursor: pointer;
+      }
+    }
+  }
+  .content-input {
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    cursor: pointer;
+    pointer-events: none;
+
+  }
+}
+.admin-detail{
+  .detail-title{
+    font-style: normal!important;
+    font-weight: 400!important;
+    font-size: 20px!important;
+    line-height: 23px!important;
+    color: black;
+  }
+  .detail-input{
+    label{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+      margin-bottom: 8px;
+    }
+    .form-group{
+      margin-bottom: 30px;
+    }
+  }
+  button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+  }
+}
+

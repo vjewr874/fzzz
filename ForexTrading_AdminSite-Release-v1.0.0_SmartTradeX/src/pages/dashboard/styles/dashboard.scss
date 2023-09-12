@@ -1,0 +1,72 @@
+#dashboard {
+  .dashboard {
+    &-header {
+      .custom-card {
+        padding: 25px 33px;
+        display: flex;
+        align-items: center;
+        min-height: 150px;
+      }
+      .change {
+        p,
+        span {
+          color: white;
+        }
+        background-color: #987ade;
+        background-image: linear-gradient(180deg, #b29ae6 -35%, #987ade 77.08%);
+      }
+      &-graph {
+        width: 200px;
+      }
+      &-icon {
+        margin-right: 15px;
+        min-width: 50px;
+        width: 50px;
+        height: 50px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      &-content {
+        p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          color: #7879f1;
+        }
+        .money {
+          font-weight: 500;
+          font-size: 22.8378px;
+          line-height: 27px;
+          color: #081131;
+          word-break: break-word;
+        }
+      }
+    }
+    .title-dashboard {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+      color: #000000;
+      padding-top: 30px;
+    }
+  }
+}
+@media only screen and (max-width: 1440px) {
+  #dashboard {
+    .dashboard {
+      &-header {
+        .custom-card {
+          padding: 15px 23px;
+          min-height: 120px;
+        }
+        &-content {
+          .money {
+            font-size: 19px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}

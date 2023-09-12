@@ -1,0 +1,14 @@
+@import '../../../../../assets/styles/helpers/variables';
+#new-password {
+  padding: 20px 8px;
+  .ic-show-password {
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    right: 8px;
+    cursor: pointer;
+  }
+  .btn-new-password {
+    margin-top: 28px;
+  }
+}
